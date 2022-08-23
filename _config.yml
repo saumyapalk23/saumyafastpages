@@ -40,7 +40,7 @@ baseurl: "/saumyafastpages" # the subpath of your site, e.g. "/blog".
 minima:
   social_links:
     twitter: 
-    github: saumyafastpages
+    github: https://github.com/saumyapalk23/saumyafastpages
 
 # Set this to true to get LaTeX math equation support
 use_math: 
