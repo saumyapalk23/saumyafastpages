@@ -1,7 +1,7 @@
 --- 
 layout: categories
 permalink: /categories/
-title: Tags
+title: Notes and Vocab
 search_exclude: true
 ---
 
