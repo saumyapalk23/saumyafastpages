@@ -1,6 +1,6 @@
 --- 
 layout: categories
-permalink: /categories/
+permalink: /notesandvocab/
 title: Notes and Vocab
 search_exclude: true
 ---
