@@ -1,3 +1,10 @@
+--- 
+layout: categories
+permalink: /notesandvocab/
+title: Notes and Vocab
+search_exclude: true
+---
+
 # Extra Credit From Alumni Meeting (8/29)
 ## Life In College: 
 * functions/programs/algorithms are such an experience to work with (visible with Colin's experience in 3d modeling and Mabel's experience with visualizing data in their respective mechanical and aerospace majors)
