@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Title",
+            "title": "GPA Calculator",
             "content": "public class GPACalc { // instantiation of obj public GradeCalculator() { this.grades = new gradelist&lt;&gt;(); this.enterGrades(); } private boolean isZero(double value){ double threshold = 0.001; return value &gt;= -threshold &amp;&amp; value &lt;= threshold; } // enterGrades input method using scanner private void enterGrades() { Scanner input; while (true) { input = new Scanner(System.in); System.out.print(&quot;Enter a double, 0 to exit: &quot;); try { double sampleInputDouble = input.nextDouble(); System.out.println(sampleInputDouble); if (isZero(sampleInputDouble)) break; // exit loop on isZero else this.grades.add(sampleInputDouble); // adding to object, ArrayList grades } catch (Exception e) { // if not a number System.out.println(&quot;Not an double (form like 9.99), &quot; + e); } input.close(); } } // calculate for the average public double average() { double total = 0; // running total for (double num : this.grades) { // enhanced for loop total += num; // shortcut add and assign operator } return (total / this.grades.size()); // double math, ArrayList grades object maintains its size } // static main method, used as driver and tester public static void main(String[] args) { GradeCalculator grades = new GradeCalculator(); // calls constructor, creates object, which calls enterGrades System.out.println(&quot;Average: &quot; + String.format(&quot;%.2f&quot;, grades.average())); // format used to standardize to two decimal points } } // IJava activation GradeCalculator.main(null); white_check_mark eyes raised_hands .",
-            "url": "https://saumyapalk23.github.io/saumyafastpages/2022/08/30/grdclc.html",
-            "relUrl": "/2022/08/30/grdclc.html",
+            "url": "https://saumyapalk23.github.io/saumyafastpages/jupyter/2022/08/30/grdclc.html",
+            "relUrl": "/jupyter/2022/08/30/grdclc.html",
             "date": " • Aug 30, 2022"
         }
         
