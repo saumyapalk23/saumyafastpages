@@ -6,7 +6,7 @@ categories: [markdown]
 title: Extra Credit From Alumni Meeting (8/29)
 ---
 
-## Life In College: 
+## Life In College
 * functions/programs/algorithms are such an experience to work with (visible with Colin's experience in 3d modeling and Mabel's experience with visualizing data in their respective mechanical and aerospace majors)
 * Working with API’s, JS, HTML, python, etc
 * CS helps a lot (internships, and basics)
@@ -21,7 +21,7 @@ title: Extra Credit From Alumni Meeting (8/29)
 * APCSA – Teaches you how to apply skills to real-world problems
 * * Nitya's example: Covid-19 Database Project when the pandemic hit during her year
 
-## Advice:
+## Advice
 * Keep motivating yourself. Github is difficult to use sometimes and errors are consistent. There is ALWAYS a solution to a problem and an answer to a question. Use Google, use your teachers. Very important to utilize your resources.
 
 * Clashing egos are difficult to encounter. CS Majors are often people to brag or talk about their accomplishments in excessive detail. It is important to not let that go to your head, and to instead take it as a seed of motivation to try harder. 
