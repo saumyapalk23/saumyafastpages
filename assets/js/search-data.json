@@ -84,9 +84,6 @@
   
 
   
-  
-
-  
 
   
   
@@ -97,13 +94,18 @@
   
 
   
+
+  
+  
+
+  
   
 
   
   
 
   
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://saumyapalk23.github.io/saumyafastpages/robots.txt",
