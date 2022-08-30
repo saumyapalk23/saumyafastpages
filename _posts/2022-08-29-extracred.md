@@ -20,6 +20,7 @@ title: Extra Credit From Alumni Meeting (8/29)
 * * CSP gave a slight technical background (with CSS, HTML, etc.)
 * APCSA – Teaches you how to apply skills to real-world problems
 * * Nitya's example: Covid-19 Database Project when the pandemic hit during her year
+
 ## Advice:
 * Keep motivating yourself. Github is difficult to use sometimes and errors are consistent. There is ALWAYS a solution to a problem and an answer to a question. Use Google, use your teachers. Very important to utilize your resources.
 
