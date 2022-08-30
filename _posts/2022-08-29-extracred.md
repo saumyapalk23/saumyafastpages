@@ -1,4 +1,11 @@
-# Extra Credit From Alumni Meeting (8/29)
+---
+toc: true
+layout: post
+description: Breakdown + Insights of What I Took Away
+categories: [markdown]
+title: Extra Credit From Alumni Meeting (8/29)
+---
+
 ## Life In College: 
 * functions/programs/algorithms are such an experience to work with (visible with Colin's experience in 3d modeling and Mabel's experience with visualizing data in their respective mechanical and aerospace majors)
 * Working with API’s, JS, HTML, python, etc
