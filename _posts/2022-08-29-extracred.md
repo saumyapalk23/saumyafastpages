@@ -7,9 +7,9 @@ title: Extra Credit From Alumni Meeting (8/29)
 ---
   <hr>
   <p>
-      <ul>
+<ul>
 
-## Life In College/Insight 
+<li>##Life In College/Insight
 * functions/programs/algorithms are such an experience to work with (visible with Colin's experience in 3d modeling and Mabel's experience with visualizing data in their respective mechanical and aerospace majors)
 * Working with API’s, JS, HTML, python, etc
 * CS helps a lot (internships, and basics)
