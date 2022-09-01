@@ -5,11 +5,10 @@ description: Breakdown + Insights of What I Took Away
 categories: [markdown]
 title: Extra Credit From Alumni Meeting (8/29)
 ---
-  <hr>
-  <p>
+## Life In College/Insight
+<hr>
+<p>
 <ul>
-
-<li>##Life In College/Insight
 * functions/programs/algorithms are such an experience to work with (visible with Colin's experience in 3d modeling and Mabel's experience with visualizing data in their respective mechanical and aerospace majors)
 * Working with API’s, JS, HTML, python, etc
 * CS helps a lot (internships, and basics)
@@ -17,13 +16,15 @@ title: Extra Credit From Alumni Meeting (8/29)
 * Data visualizations include: Sorting algorithms, graph theory, etc. for visualizing
 * Data manipulation visible in mechanical engineering
 * Cam or computation-aided manufacturing
-* * <li>Simulations for materials that are done by hand and  <a href="https://pages.github.com/themes/"><mark>have to be converted into actual functions -- </mark></a> after further setup of resources,  <a href="https://pages.github.com/themes/"><mark>goal is to run those computations</mark></a></li>
+* * <li>Simulations for materials that are done by hand and  <a href="https://pages.github.com/themes/"><mark>have to be converted into actual functions -- </mark></a> after further setup of resources, <a href="https://pages.github.com/themes/"><mark>goal is to run those computations</mark></a></li>
 
 * As for cognitive science, or the graphical design aspect w/ web development: design, ux ui (user interface/interaction) are very important
 * * CSP gave a slight technical background (with CSS, HTML, etc.)
 * APCSA – Teaches you how to apply skills to real-world problems
 * * Nitya's example: Covid-19 Database Project when the pandemic hit during her year
-
+</p>
+</ul>
+</hr>
 ## Advice & Main Takeaways
 * <li>Keep motivating yourself. Github is difficult to use sometimes and errors are consistent.  <a href="https://pages.github.com/themes/"><mark>There is ALWAYS a solution to a problem and an answer to a question.</mark></a> Use Google, use your teachers. Very important to utilize your resources.</li>
 
@@ -72,11 +73,6 @@ title: Extra Credit From Alumni Meeting (8/29)
 * Open a linkedin
 * Ask local/smaller company for highschool interns
        '
-</ul>
 
-  </p>
-  </hr>
-   </div>
-</div>
 
 
