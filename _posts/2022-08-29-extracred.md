@@ -71,7 +71,8 @@ title: Extra Credit From Alumni Meeting (8/29)
 * A resume done by early Sep to get an internship by summer (generally open up in the fall)
 * Open a linkedin
 * Ask local/smaller company for highschool interns
-        </ul>
+       '
+</ul>
 
   </p>
   <hr>
