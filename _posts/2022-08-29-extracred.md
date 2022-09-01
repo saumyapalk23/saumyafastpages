@@ -7,24 +7,8 @@ title: Extra Credit From Alumni Meeting (8/29)
 ---
   <hr>
   <p>
-      Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website.  In this class, we will be using <a href="https://github.com/fastai/fastpages"><mark>Fastpages</mark></a> on top of GitHub Pages to maximize our presentations, while minimizing our front-end coding.
       <ul>
           <li>CSS style layout is provided by using <a href="https://pages.github.com/themes/"><mark>Themes</mark></a> provided through GH Pages. Each page we make we assume the defined theme and insert our HTML fragments, local page style, and local page JavaScript.</li>
-
-          <li>Fastpages defaults to the <a href="https://github.com/jekyll/minima"><mark>minima</mark></a> theme.  Review the the README.md for style or layout customizations.</li>
-
-          <li>GitHub Pages deployment is performed through <a href="https://jekyllrb.com/"><mark>Jekyll</mark></a>, which regenerates the website automatically after each commit, tracking can be seen in Actions tab within GitHub.</li>
-
-          <li> HTML generation is performed through <a href="https://shopify.github.io/liquid/basics/introduction/"><mark>Liquid</mark></a>, a template language (similar to Jinja2 or Thymeleaf).</li>
-
-          <li><a href="https://www.javascript.com/"><mark>JavaScript</mark></a> enable pages to have actions, fetch content, animate, etc</li> 
-      </ul>
-  </p>
-  <hr>
-   </div>
-</div>
-
-
 
 ## Life In College/Insight 
 * functions/programs/algorithms are such an experience to work with (visible with Colin's experience in 3d modeling and Mabel's experience with visualizing data in their respective mechanical and aerospace majors)
@@ -34,7 +18,7 @@ title: Extra Credit From Alumni Meeting (8/29)
 * Data visualizations include: Sorting algorithms, graph theory, etc. for visualizing
 * Data manipulation visible in mechanical engineering
 * Cam or computation-aided manufacturing
-* * Simulations for materials that are done by hand and have to be converted into actual functions -- after further setup of resources, goal is to run those computations
+* * <li>Simulations for materials that are done by hand and  <a href="https://pages.github.com/themes/"><mark>have to be converted into actual functions -- </mark></a> after further setup of resources,  <a href="https://pages.github.com/themes/"><mark>goal is to run those computations</mark></a></li>
 
 * As for cognitive science, or the graphical design aspect w/ web development: design, ux ui (user interface/interaction) are very important
 * * CSP gave a slight technical background (with CSS, HTML, etc.)
@@ -42,14 +26,14 @@ title: Extra Credit From Alumni Meeting (8/29)
 * * Nitya's example: Covid-19 Database Project when the pandemic hit during her year
 
 ## Advice & Main Takeaways
-* Keep motivating yourself. Github is difficult to use sometimes and errors are consistent. There is ALWAYS a solution to a problem and an answer to a question. Use Google, use your teachers. Very important to utilize your resources.
+* <li>Keep motivating yourself. Github is difficult to use sometimes and errors are consistent.  <a href="https://pages.github.com/themes/"><mark>There is ALWAYS a solution to a problem and an answer to a question.</mark></a> Use Google, use your teachers. Very important to utilize your resources.</li>
 
 * Clashing egos are difficult to encounter. CS Majors are often people to brag or talk about their accomplishments in excessive detail. It is important to not let that go to your head, and to instead take it as a seed of motivation to try harder. 
 
-* Focus on your path, and follow your own curve. The theory behind computer science is very different in college and the way that APCSA/P are structured is much more straightforward than it will be in college; it is thus important to use what you learned in highschool and apply to college.
+* <li> <a href="https://pages.github.com/themes/"><mark> Focus on your path, and follow your own curve.</mark></a> The theory behind computer science is very different in college and the way that APCSA/P are structured is much more straightforward than it will be in college; it is thus important to use what you learned in highschool and apply to college.</li>
 
 * It is important to learn how to flowchart things and learn how to logically move through problems. 
-* Fighting the temptation to BS -- hard work will turn out in the end. It is important to stop cutting corners and put everything in a box as a necessity to get points vs. actually learning the context and expanding thinking.
+* <li>Fighting the temptation to BS -- hard work will turn out in the end. It is important to stop cutting corners and put everything in a box as a necessity to get points vs. actually learning the context and expanding thinking.</li>
 
 * Getting started in new areas is difficult. It’s difficult to get rid of structure that people are put in when they are organized and fixed. But CS Is many different ideas put together, and there are many PBL scenarios in college CS classes. One has to adapt to fit them al.
 
@@ -89,6 +73,9 @@ title: Extra Credit From Alumni Meeting (8/29)
 * Open a linkedin
 * Ask local/smaller company for highschool interns
 
-
+  </p>
+  <hr>
+   </div>
+</div>
 
 
