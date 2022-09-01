@@ -75,7 +75,7 @@ title: Extra Credit From Alumni Meeting (8/29)
 </ul>
 
   </p>
-  <hr>
+  </hr>
    </div>
 </div>
 
