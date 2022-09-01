@@ -5,6 +5,26 @@ description: Breakdown + Insights of What I Took Away
 categories: [markdown]
 title: Extra Credit From Alumni Meeting (8/29)
 ---
+  <hr>
+  <p>
+      Front-end web development is the development of the graphical user interface of a website, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that website.  In this class, we will be using <a href="https://github.com/fastai/fastpages"><mark>Fastpages</mark></a> on top of GitHub Pages to maximize our presentations, while minimizing our front-end coding.
+      <ul>
+          <li>CSS style layout is provided by using <a href="https://pages.github.com/themes/"><mark>Themes</mark></a> provided through GH Pages. Each page we make we assume the defined theme and insert our HTML fragments, local page style, and local page JavaScript.</li>
+
+          <li>Fastpages defaults to the <a href="https://github.com/jekyll/minima"><mark>minima</mark></a> theme.  Review the the README.md for style or layout customizations.</li>
+
+          <li>GitHub Pages deployment is performed through <a href="https://jekyllrb.com/"><mark>Jekyll</mark></a>, which regenerates the website automatically after each commit, tracking can be seen in Actions tab within GitHub.</li>
+
+          <li> HTML generation is performed through <a href="https://shopify.github.io/liquid/basics/introduction/"><mark>Liquid</mark></a>, a template language (similar to Jinja2 or Thymeleaf).</li>
+
+          <li><a href="https://www.javascript.com/"><mark>JavaScript</mark></a> enable pages to have actions, fetch content, animate, etc</li> 
+      </ul>
+  </p>
+  <hr>
+   </div>
+</div>
+
+
 
 ## Life In College/Insight 
 * functions/programs/algorithms are such an experience to work with (visible with Colin's experience in 3d modeling and Mabel's experience with visualizing data in their respective mechanical and aerospace majors)
