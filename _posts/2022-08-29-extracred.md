@@ -8,7 +8,6 @@ title: Extra Credit From Alumni Meeting (8/29)
   <hr>
   <p>
       <ul>
-          <li>CSS style layout is provided by using <a href="https://pages.github.com/themes/"><mark>Themes</mark></a> provided through GH Pages. Each page we make we assume the defined theme and insert our HTML fragments, local page style, and local page JavaScript.</li>
 
 ## Life In College/Insight 
 * functions/programs/algorithms are such an experience to work with (visible with Colin's experience in 3d modeling and Mabel's experience with visualizing data in their respective mechanical and aerospace majors)
@@ -72,6 +71,7 @@ title: Extra Credit From Alumni Meeting (8/29)
 * A resume done by early Sep to get an internship by summer (generally open up in the fall)
 * Open a linkedin
 * Ask local/smaller company for highschool interns
+        </ul>
 
   </p>
   <hr>
