@@ -5,8 +5,7 @@ description: Breakdown + Insights of What I Took Away
 categories: [markdown]
 title: Extra Credit From Alumni Meeting (8/29)
 ---
-
-## Life In College/Insight 
+## Life In College/Insight
 * functions/programs/algorithms are such an experience to work with (visible with Colin's experience in 3d modeling and Mabel's experience with visualizing data in their respective mechanical and aerospace majors)
 * Working with API’s, JS, HTML, python, etc
 * CS helps a lot (internships, and basics)
@@ -14,22 +13,21 @@ title: Extra Credit From Alumni Meeting (8/29)
 * Data visualizations include: Sorting algorithms, graph theory, etc. for visualizing
 * Data manipulation visible in mechanical engineering
 * Cam or computation-aided manufacturing
-* * Simulations for materials that are done by hand and have to be converted into actual functions -- after further setup of resources, goal is to run those computations
-
+* * <li>Simulations for materials that are done by hand and  <a href="https://pages.github.com/themes/"><mark>have to be converted into actual functions -- </mark></a> after further setup of resources, <a href="https://pages.github.com/themes/"><mark>goal is to run those computations</mark></a></li>
 * As for cognitive science, or the graphical design aspect w/ web development: design, ux ui (user interface/interaction) are very important
 * * CSP gave a slight technical background (with CSS, HTML, etc.)
 * APCSA – Teaches you how to apply skills to real-world problems
 * * Nitya's example: Covid-19 Database Project when the pandemic hit during her year
 
 ## Advice & Main Takeaways
-* Keep motivating yourself. Github is difficult to use sometimes and errors are consistent. There is ALWAYS a solution to a problem and an answer to a question. Use Google, use your teachers. Very important to utilize your resources.
+* <li>Keep motivating yourself. Github is difficult to use sometimes and errors are consistent.  <a href="https://pages.github.com/themes/"><mark>There is ALWAYS a solution to a problem and an answer to a question.</mark></a> Use Google, use your teachers. Very important to utilize your resources.</li>
 
 * Clashing egos are difficult to encounter. CS Majors are often people to brag or talk about their accomplishments in excessive detail. It is important to not let that go to your head, and to instead take it as a seed of motivation to try harder. 
 
-* Focus on your path, and follow your own curve. The theory behind computer science is very different in college and the way that APCSA/P are structured is much more straightforward than it will be in college; it is thus important to use what you learned in highschool and apply to college.
+* <li> <a href="https://pages.github.com/themes/"><mark> Focus on your path, and follow your own curve.</mark></a> The theory behind computer science is very different in college and the way that APCSA/P are structured is much more straightforward than it will be in college; it is thus important to use what you learned in highschool and apply to college.</li>
 
 * It is important to learn how to flowchart things and learn how to logically move through problems. 
-* Fighting the temptation to BS -- hard work will turn out in the end. It is important to stop cutting corners and put everything in a box as a necessity to get points vs. actually learning the context and expanding thinking.
+* <li>Fighting the temptation to BS -- hard work will turn out in the end. It is important to stop cutting corners and put everything in a box as a necessity to get points vs. actually learning the context and expanding thinking.</li>
 
 * Getting started in new areas is difficult. It’s difficult to get rid of structure that people are put in when they are organized and fixed. But CS Is many different ideas put together, and there are many PBL scenarios in college CS classes. One has to adapt to fit them al.
 
@@ -68,7 +66,7 @@ title: Extra Credit From Alumni Meeting (8/29)
 * A resume done by early Sep to get an internship by summer (generally open up in the fall)
 * Open a linkedin
 * Ask local/smaller company for highschool interns
-
+       '
 
 
 
