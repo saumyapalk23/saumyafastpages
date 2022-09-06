@@ -4,8 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+Hi, I'm Saumya Palakodety, a junior at Del Norte High School!!
 
+![]({{site.baseurl}}/images/IMG_0653.jpg "https://github.com/saumyapalk23/saumyafastpages/blob/master/images/IMG_0653.jpg") <img align="left">
 
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
