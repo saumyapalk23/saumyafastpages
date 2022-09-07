@@ -28,6 +28,7 @@ permalink: /notesandvocab/
 
 
 ### Code.Org Notes
+
 <table>
   <tr>
     <th>Unit</th>
@@ -40,8 +41,6 @@ permalink: /notesandvocab/
         <td>Unit 1 (Cont.) </td>
         <td><a href="https://saumyapalk23.github.io/saumyafastpages/markdown/2022/08/28/blogbash.html">Week 2 Vocab</a></td>
 </table>
-
-
 
 ### PBL Lessons
 <table>
