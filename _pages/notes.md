@@ -45,7 +45,6 @@ permalink: /notesandvocab/
 </table>
 
 ### PBL Lessons
-
 <table>
   <tr>
     <th>Topic</th>
@@ -54,7 +53,6 @@ permalink: /notesandvocab/
   <tr>
       <td>Alumni Notes </td>
       <td><a href="https://saumyapalk23.github.io/saumyafastpages/markdown/2022/08/29/extracred.html">Alumni Notes</a></td>
- 
 </table>
 
 
