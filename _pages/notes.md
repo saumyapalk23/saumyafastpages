@@ -23,7 +23,6 @@ permalink: /notesandvocab/
     <td>Unit 2</td>
       <td><a href="https://saumyapalk23.github.io/saumyafastpages/jupyter/2022/09/05/documentanalysis.html">Objects Notes</a></td>
       <td><a href="">Objects Usage</a></td>
-
   </tr>
 </table>
 
@@ -40,9 +39,9 @@ permalink: /notesandvocab/
   </tr>
         <td>Unit 1 (Cont.) </td>
         <td><a href="https://saumyapalk23.github.io/saumyafastpages/markdown/2022/08/28/blogbash.html">Week 2 Vocab</a></td>
-
-
 </table>
+
+
 
 ### PBL Lessons
 <table>
