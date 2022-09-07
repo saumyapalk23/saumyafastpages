@@ -304,6 +304,7 @@ if (powerChoice.equals("b")){
 
 }
 break;
+ case "tan": result = Math.tan((first - second + second)); break; default: break; } return result; }
 
 }
 // Equal action
