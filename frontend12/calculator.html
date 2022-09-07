@@ -181,26 +181,17 @@ window.onload = wrap_img;
     <div class="calculator-button" onclick="clearCalc()">A/C</div>
     <div class="calculator-button" onclick="number('0')">0</div>
     <div class="calculator-button" onclick="number('.')">.</div>
-    <div class="calculator-button" onclick="equals()">=</div>
-    <!--row 4-->
-    <div class="calculator-button" onclick="clearCalc()">A/C</div>
-    <div class="calculator-button" onclick="number('0')">0</div>
-    <div class="calculator-button" onclick="number('.')">.</div>
-    <div class="calculator-button" onclick="equals()">=</div>
-        <!--row 4-->
-    <div class="calculator-button" onclick="clearCalc()">A/C</div>
-    <div class="calculator-button" onclick="number('0')">0</div>
-    <div class="calculator-button" onclick="number('.')">.</div>
-    <div class="calculator-button" onclick="equals()">=</div>
         <!--row 5-->
+    <div class="calculator-button" onclick="clearCalc()">A/C</div>
+    <div class="calculator-button" onclick="number('0')">0</div>
+    <div class="calculator-button" onclick="number('.')">.</div>
+        <!--row 6-->
     <div class="calculator-button" onclick="operation('√')">√</div>
     <div class="calculator-button" onclick="operation('sin')">sin</div>
     <div class="calculator-button" onclick="operation('cos')">cos</div>
     <div class="calculator-button" onclick="operation('tan')">tan</div>
     <!--row 6-->
-    <div class="calculator-button" onclick="operation('!')">!</div>
     <div class="calculator-button" onclick="operation('^')">^</div>
-    <div class="calculator-button" onclick="equals('=')">=</div>
 
 
           
@@ -250,91 +241,144 @@ function operation (choice) { // function to input operations into the calculato
 }
 
 // Calculator
-function calculate (first, second) { // function to calculate the result of the equation
-    let result = 0;
-    switch (operator) {
-        case "+":
-            result = first + second;
-            break;
-        case "-":
-            result = first - second;
-            break;
-        case "*":
-            result = first * second;
-            break;
-        case "/":
-            result = first / second;
-            break;
-        case "√":
-            result = first / second;
-            break;        
-        case "sin":
-            result = first / second;
-            break;System.out.print("Which number? (a)" + a + " or (b)" + b + ": ");
-			String sinChoice = sc.next();
+import java.util.Scanner;
 
-			if (sinChoice.equals("a")) {
-				a = Math.toRadians(a);
-				c = Math.sin(a);
-			}
+public class Calculator {
 
-			if (sinChoice.equals("b")) {
-				b = Math.toRadians(b);
-				c = Math.sin(b);
-			}
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
 
-			break;        
-        case "cos":
-            System.out.print("Which number? (a)" + a + " or (b)" + b + ": ");
-			String cosChoice = sc.next();
+System.out.print("Please enter your first number: ");
+double a = sc.nextInt();
 
-			if (cosChoice.equals("a")) {
-				a = Math.toRadians(a);
-				c = Math.cos(a);
-			}
+System.out.print("Please enter your second number: ");
+double b = sc.nextInt();
 
-			if (cosChoice.equals("b")) {
-				b = Math.toRadians(b);
-				c = Math.cos(b);
-			}
+// random error fix
+sc.nextLine();
 
-			break;
-        case "tan":
-            System.out.print("Which number? (a)" + a + " or (b)" + b + ": ");
-			String tanChoice = sc.next();
+// initialize the result variable "c"
+double c = 0;
 
-			if (tanChoice.equals("a")) {
-				a = Math.toRadians(a);
-				c = Math.tan(a);
-			}
+System.out.print("Please enter your function: ");
+String func = sc.nextLine();
 
-			if (tanChoice.equals("b")) {
-				b = Math.toRadians(b);
-				c = Math.tan(b);
-			}
+switch (func) {
+// text function is add, subtract ...
 
-			break;         
-            
-         case "!":
-            result = first / second;
-            break;
-         case "^":
-            System.out.print("Which number? (a)" + a + " or (b)" + b + ": ");
-			String sqrtChoice = sc.next();
-			
-			if (sqrtChoice.equals("a")){
-				c = Math.sqrt(a);
-			}
-			if (sqrtChoice.equals("b")){
-				c = Math.sqrt(b);
-			}
-			break;        
-        default: 
-            break;
+default:
+    System.out.println("The function you have entered has been misspelled or has not yet been implemented!");
+    
+case "help":
+    System.out.println("Functions avaliable: +, -, *, /, ^, sin, cos, tan, mod(%),(WIP)");
+    break;
+case "add":
+    c = a + b;
+    break;
+
+case "subtract":
+    c = a - b;
+    break;
+
+case "multiply":
+    c = a * b;
+    break;
+
+case "divide":
+    c = a / b;
+    break;
+
+    // same as above except with symbols
+case "+":
+    c = a + b;
+    break;
+
+case "-":
+    c = a - b;
+    break;
+
+case "*":
+    c = a * b;
+    break;
+
+case "/":
+    c = a / b;
+    break;
+
+case "sin":
+    System.out.print("Which number? (a)" + a + " or (b)" + b + ": ");
+    String sinChoice = sc.next();
+
+    if (sinChoice.equals("a")) {
+        a = Math.toRadians(a);
+        c = Math.sin(a);
     }
-    return result;
-}
 
+    if (sinChoice.equals("b")) {
+        b = Math.toRadians(b);
+        c = Math.sin(b);
+    }
+
+    break;
+
+case "cos":
+    System.out.print("Which number? (a)" + a + " or (b)" + b + ": ");
+    String cosChoice = sc.next();
+
+    if (cosChoice.equals("a")) {
+        a = Math.toRadians(a);
+        c = Math.cos(a);
+    }
+
+    if (cosChoice.equals("b")) {
+        b = Math.toRadians(b);
+        c = Math.cos(b);
+    }
+
+    break;
+
+case "tan":
+    System.out.print("Which number? (a)" + a + " or (b)" + b + ": ");
+    String tanChoice = sc.next();
+
+    if (tanChoice.equals("a")) {
+        a = Math.toRadians(a);
+        c = Math.tan(a);
+    }
+
+    if (tanChoice.equals("b")) {
+        b = Math.toRadians(b);
+        c = Math.tan(b);
+    }
+
+    break;
+
+case "sqrt":
+    System.out.print("Which number? (a)" + a + " or (b)" + b + ": ");
+    String sqrtChoice = sc.next();
+    
+    if (sqrtChoice.equals("a")){
+        c = Math.sqrt(a);
+    }
+    if (sqrtChoice.equals("b")){
+        c = Math.sqrt(b);
+    }
+    break;
+    
+case "^":
+    System.out.print("(a) "+ a + "^" + b + ", or (b) " + b + "^" + a + "? ");
+    String powerChoice = sc.next();
+    if (powerChoice.equals("a")){
+        c = Math.pow(a, b);
+    }
+    if (powerChoice.equals("b")){
+        c = Math.pow(b, a);
+        
+
+    }
+    break;
+
+}
 // Equal action
 function equals () { // function used when the equals button is clicked; calculates equation and displays it
     firstNumber = calculate(firstNumber, parseFloat(output.innerHTML));
