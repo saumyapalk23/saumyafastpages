@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Classic Snake Game",
-            "content": "| Menu | Calculator | Snake Game | . Snake score: 0 . . Welcome to Snake, press space to begin . new game settings Game Over, press space to try again . new game settings Settings Screen, press space to go back to playing . new game Speed: Slow Normal Fast . Wall: On Off .",
+            "content": "| Overview | Calculator | Snake Game | . Snake score: 0 . . Welcome to Snake, press space to begin . new game settings Game Over, press space to try again . new game settings Settings Screen, press space to go back to playing . new game Speed: Slow Normal Fast . Wall: On Off .",
             "url": "https://saumyapalk23.github.io/saumyafastpages/frontend/snake",
             "relUrl": "/frontend/snake",
             "date": " • Sep 6, 2022"
@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Calculator Starters",
-            "content": "| Menu | Calculator | Snake Game | . 0 1 2 3 + 4 5 6 - 7 8 9 * A/C 0 . =",
+            "content": "| Overview | Calculator | Snake Game | . 0 1 2 3 + 4 5 6 - 7 8 9 * A/C 0 . =",
             "url": "https://saumyapalk23.github.io/saumyafastpages/frontend/calculator",
             "relUrl": "/frontend/calculator",
             "date": " • Sep 6, 2022"
@@ -161,7 +161,7 @@
   
       ,"page2": {
           "title": "Frontend Hacks",
-          "content": "| Menu | Calculator | Snake Game | . Frontend! .",
+          "content": "| Overview | Calculator | Snake Game | . Frontend! .",
           "url": "https://saumyapalk23.github.io/saumyafastpages/frontend12/updates",
           "relUrl": "/frontend12/updates",
           "date": ""
