@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Frontend Hacks
+title: Frontend Changes
 permalink: /frontend12/updates
 ---
 
