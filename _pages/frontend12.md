@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Frontend Hacks
-permalink: /frontend/overview
+permalink: /frontend12/updates
 ---
 
 {% include nav_frontend.html %}
