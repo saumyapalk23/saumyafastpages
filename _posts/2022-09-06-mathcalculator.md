@@ -122,6 +122,7 @@ tags: [javascript, css. dom, getElementID]
     <div class="calculator-button" onclick="operation('^')">^</div>
     <div class="calculator-button" onclick="operation('Math.toDegrees')">Degrees</div>
     <div class="calculator-button" onclick="operation('Math.toRadians')">Radians</div>
+    <div class="calculator-button" onclick="operation('=')">=</div>
 
 
 
