@@ -1,13 +1,7 @@
---- 
-layout: categories
-permalink: /notesandvocab/
-title: Notes and Vocab
-search_exclude: true
----
 ---
 layout: page
 title: Notes
-permalink: /notes/
+permalink: /notesandvocab/
 ---
 
 ### College Board 
