@@ -1,3 +1,11 @@
+---
+toc: true
+layout: post
+description: some things I learned from this week's human lesson
+categories: [markdown]
+title: Video Notes
+---
+
 ## Video Notes
 
 * culture has molded stress
