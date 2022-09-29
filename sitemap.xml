@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://saumyapalk23.github.io/saumyafastpages/markdown/2020/01/14/test-markdown-post.html</loc>
+<lastmod>2020-01-14T00:00:00-06:00</lastmod>
+</url>
+<url>
 <loc>https://saumyapalk23.github.io/saumyafastpages/jupyter/2020/02/20/test.html</loc>
 <lastmod>2020-02-20T00:00:00-06:00</lastmod>
 </url>
@@ -61,6 +65,30 @@
 <lastmod>2022-09-12T00:00:00-05:00</lastmod>
 </url>
 <url>
+<loc>https://saumyapalk23.github.io/saumyafastpages/2022/09/20/2018frq.html</loc>
+<lastmod>2022-09-20T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://saumyapalk23.github.io/saumyafastpages/2022/09/20/FRQ2021-1.html</loc>
+<lastmod>2022-09-20T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://saumyapalk23.github.io/saumyafastpages/jupyter/2022/09/20/lesson.html</loc>
+<lastmod>2022-09-20T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://saumyapalk23.github.io/saumyafastpages/jupyter/2022/09/24/fibo.html</loc>
+<lastmod>2022-09-24T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://saumyapalk23.github.io/saumyafastpages/Project/</loc>
+<lastmod>2022-09-26T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://saumyapalk23.github.io/saumyafastpages/friends/</loc>
+<lastmod>2022-09-28T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://saumyapalk23.github.io/saumyafastpages/about/</loc>
 </url>
 <url>
@@ -77,5 +105,8 @@
 </url>
 <url>
 <loc>https://saumyapalk23.github.io/saumyafastpages/categories/</loc>
+</url>
+<url>
+<loc>https://saumyapalk23.github.io/saumyafastpages/page2/</loc>
 </url>
 </urlset>
