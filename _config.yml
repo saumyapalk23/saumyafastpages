@@ -37,9 +37,10 @@ url: "https://saumyapalk23.github.io" # the base hostname & protocol for your si
 baseurl: "/saumyafastpages" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
-//new code
- social_links:
-    - { platform: github, user_url: "https://github.com/spalak23" }
+minima:
+  social_links:
+    - { platform: github, user_url: "https://github.com/saumyapalk23" }
+    
 # Set this to true to get LaTeX math equation support
 use_math: 
 
