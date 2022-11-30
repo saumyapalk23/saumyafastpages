@@ -39,9 +39,8 @@ baseurl: "/saumyafastpages" # the subpath of your site, e.g. "/blog".
 # Github and twitter are optional:
 minima:
   social_links:
-    twitter: 
-    github: saumyapalk23/saumyafastpages
-
+    - { platform: github, user_url: "https://github.com/saumyapalk23" }
+    
 # Set this to true to get LaTeX math equation support
 use_math: 
 
@@ -64,6 +63,7 @@ exclude:
   - docker-compose.yml
   - action.yml
   - Makefile
+  - settings.ini
 
 # this setting allows you to keep pages organized in the _pages folder
 include:
@@ -122,5 +122,3 @@ feed:
   posts_limit: 5 #default posts_limit: 10
   excerpt_only: true
   
-exclude:
-  - settings.ini
