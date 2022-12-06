@@ -167,99 +167,16 @@ window.onload = wrap_img;
     <span class="p">}</span>
     <span class="k">return</span> <span class="n">stringBuilder</span><span class="p">.</span><span class="na">toString</span><span class="p">();</span>
   <span class="p">}</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//prepares for scanning</span>
-    <span class="n">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Input string: "</span><span class="p">);</span> <span class="c1">//asks for user input</span>
-    <span class="n">String</span> <span class="n">input</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span> <span class="c1">//takes in next line</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"\nResult: "</span> <span class="o">+</span> <span class="n">reverse_str_word</span><span class="p">(</span><span class="n">input</span><span class="p">));</span>
-  <span class="p">}</span>
 <span class="p">}</span>
-
-<span class="n">z</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//prepares for scanning</span>
+  <span class="n">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Input string: "</span><span class="p">);</span> <span class="c1">//asks for user input</span>
+  <span class="n">String</span> <span class="n">input</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span> <span class="c1">//takes in next line</span>
+  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"\nResult: "</span> <span class="o">+</span> <span class="n">reverse_str_word</span><span class="p">(</span><span class="n">input</span><span class="p">));</span>
+<span class="p">}</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">public static void main(String[] args) { //prepares for scanning</span>
-<span class="ansi-red-intense-fg ansi-bold">illegal start of expression</span>
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="c1">// # October 29, 2022</span>
-
-<span class="c1">//Exercise 1: </span>
-<span class="c1">//Write a program to reverse the words in a sentence</span>
-<span class="c1">//example: the strawberry cake</span>
-<span class="c1">//becomes: cake strawberry the</span>
-
-<span class="c1">//hints: use scanner to take in words</span>
-<span class="c1">//use split to break apart words to reverse them</span>
-<span class="c1">//when ready, or want to go over type in chat/tell me</span>
-
-<span class="kn">import</span> <span class="nn">java.util.*</span><span class="p">;</span> <span class="c1">//import scanner</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
-  
-  <span class="c1">//</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">reverse_str_order</span><span class="p">(</span><span class="n">String</span> <span class="n">input_sentence</span><span class="p">)</span> <span class="p">{</span>
-<span class="k">if</span> <span class="p">(</span><span class="n">input_sentence</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">throw</span> <span class="k">new</span> <span class="n">IllegalArgumentException</span><span class="p">(</span><span class="s">"Null"</span><span class="p">);</span> <span class="c1">//no empty strings</span>
-
-<span class="n">StringBuilder</span> <span class="n">stringBuilder</span> <span class="o">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="p">();</span>
-<span class="n">String</span><span class="o">[]</span> <span class="n">words</span> <span class="o">=</span> <span class="n">input_sentence</span><span class="p">.</span><span class="na">split</span><span class="p">(</span><span class="s">" "</span><span class="p">);</span>
-<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">words</span><span class="p">.</span><span class="na">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">stringBuilder</span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="n">words</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span> <span class="c1">//place words in order</span>
-  <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//keep going until no more words are left</span>
-    <span class="n">stringBuilder</span><span class="p">.</span><span class="na">append</span><span class="p">(</span><span class="s">" "</span><span class="p">);</span>
-<span class="k">return</span> <span class="n">stringBuilder</span><span class="p">.</span><span class="na">toString</span><span class="p">();</span>
-  
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span> 
-    <span class="n">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Input string: "</span><span class="p">);</span> <span class="c1">//asks for user input</span>
-    <span class="n">String</span> <span class="n">input</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span> <span class="c1">//takes in next line</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"\nResult: "</span> <span class="o">+</span> <span class="n">reverse_str_word</span><span class="p">(</span><span class="n">input</span><span class="p">));</span>
-<span class="p">}}}}}}</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">  </span><span class="ansi-black-intense-fg ansi-bold">public static void main(String[] args) { </span>
-<span class="ansi-red-intense-fg ansi-bold">illegal start of expression</span>
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
