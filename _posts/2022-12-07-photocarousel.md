@@ -3,7 +3,7 @@ layout: default
 title: Photo Carousel
 description: an awesome carousel
 permalink: /about
-image: /images/calculator.png
+image: /images/IMG_3501.jpg
 categories: [pbl]
 tags: [javascript, css. dom, getElementID]
 ---
