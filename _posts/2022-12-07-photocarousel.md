@@ -23,14 +23,14 @@ tags: [javascript, css. dom, getElementID]
 
 <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="IMG_1157.jpg" style="width:100%">
+    <img src="IMG_1157.JPG" style="width:100%">
     <div class="text">Caption Text</div>
   </div>\
 
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="IMG_6068" style="width:100%">
+    <img src="IMG_6068.jpg" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
