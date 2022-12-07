@@ -2,7 +2,7 @@
 layout: default
 title: Photo Carousel
 description: an awesome carousel
-permalink: /about
+permalink: /frontend12/PhotoCarousel
 image: /images/IMG_3501.jpg
 categories: [pbl]
 tags: [javascript, css. dom, getElementID]
