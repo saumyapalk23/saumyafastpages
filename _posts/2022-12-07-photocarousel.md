@@ -17,7 +17,7 @@ tags: [javascript]
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 16</div>
-    <img src="/imagescarousel/IMG_3501.jpg" style="width:100%">
+    <img src="{{site.baseurl}}//imagescarousel/IMG_3501.jpg" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
