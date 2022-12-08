@@ -72,45 +72,45 @@ tags: [javascript]
 
   <div class="mySlides fade">
     <div class="numbertext">8</div>
-    <img src="{{site.baseurl}}//imagescarousel/IMG_3501.jpg" style="width:100%">
+    <img src="{{site.baseurl}}/imagescarousel/IMG_3501.jpg" style="width:100%">
     <div class="text">hopefully no one finds this</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">9</div>
-    <img src="{{site.baseurl}}//imagescarousel/imagetwo.jpg" style="width:100%">
+    <img src="{{site.baseurl}}/imagescarousel/imagetwo.jpg" style="width:100%">
     <div class="text">hehe</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">10</div>
-    <img src="{{site.baseurl}}//imagescarousel/imagethree.JPG" style="width:100%">
+    <img src="{{site.baseurl}}/imagescarousel/imagethree.JPG" style="width:100%">
     <div class="text">shrug</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">11</div>
-    <img src="{{site.baseurl}}//imagescarousel/PHOTO-2022-05-29-16-05-27.jpg" style="width:100%">
+    <img src="{{site.baseurl}}/imagescarousel/PHOTO-2022-05-29-16-05-27.jpg" style="width:100%">
     <div class="text">yass</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">12</div>
-    <img src="{{site.baseurl}}//imagescarousel/PHOTO-2022-06-17-16-58-00.jpg" style="width:100%">
+    <img src="{{site.baseurl}}/imagescarousel/PHOTO-2022-06-17-16-58-00.jpg" style="width:100%">
     <div class="text">yessir SASA</div>
   </div>
 
   
   <div class="mySlides fade">
     <div class="numbertext">13</div>
-    <img src="{{site.baseurl}}//imagescarousel/qinnis.jpg" style="width:100%">
+    <img src="{{site.baseurl}}/imagescarousel/qinnis.jpg" style="width:100%">
     <div class="text">kweens</div>
   </div>
 
   
   <div class="mySlides fade">
     <div class="numbertext">14</div>
-    <img src="{{site.baseurl}}//imagescarousel/queens.jpg" style="width:100%">
+    <img src="{{site.baseurl}}/imagescarousel/queens.jpg" style="width:100%">
     <div class="text">qian and i</div>
   </div>
 
