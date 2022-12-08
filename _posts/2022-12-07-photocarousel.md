@@ -110,7 +110,7 @@ tags: [javascript]
   
   <div class="mySlides fade">
     <div class="numbertext">16 / 16</div>
-    <img src="{{site.baseurl}}//imagescarousel/queens.jpg" style="width:100%">
+    <img src="{{site.baseurl}}//imagescarousel/queens.png" style="width:100%">
     <div class="text">kweens</div>
   </div>
 
