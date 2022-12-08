@@ -36,7 +36,7 @@ tags: [javascript]
   <div class="mySlides fade">
     <div class="numbertext">4</div>
     <img src="{{site.baseurl}}//imagescarousel/0101161417_HDR_Original.jpg" style="width:100%">
-    <div class="text">!!</div>
+    <div class="text">lolz</div>
   </div>
 
    <!-- <div class="mySlides fade">
@@ -79,7 +79,7 @@ tags: [javascript]
   <div class="mySlides fade">
     <div class="numbertext">9</div>
     <img src="{{site.baseurl}}//imagescarousel/imagetwo.jpg" style="width:100%">
-    <div class="text">!!!</div>
+    <div class="text">yuppy</div>
   </div>
 
   <div class="mySlides fade">
@@ -99,14 +99,12 @@ tags: [javascript]
     <img src="{{site.baseurl}}//imagescarousel/PHOTO-2022-06-17-16-58-00.jpg" style="width:100%">
     <div class="text">wowza</div>
   </div>
-
   
   <div class="mySlides fade">
     <div class="numbertext">13</div>
     <img src="{{site.baseurl}}//imagescarousel/qinnis.jpg" style="width:100%">
     <div class="text">yawzers</div>
   </div>
-
   
   <div class="mySlides fade">
     <div class="numbertext">14</div>
