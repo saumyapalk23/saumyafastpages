@@ -15,11 +15,6 @@ tags: [javascript]
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 16</div>
-    <img src="{{site.baseurl}}//imagescarousel/IMG_3501.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
-  </div>
 
 <div class="mySlides fade">
     <div class="numbertext">2 / 16</div>
@@ -75,6 +70,12 @@ tags: [javascript]
     <div class="numbertext">10 / 16</div>
     <img src="/imagescarousel/imageone.jpg" style="width:100%">
     <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 16</div>
+    <img src="{{site.baseurl}}//imagescarousel/IMG_3501.jpg" style="width:100%">
+    <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
@@ -167,7 +168,9 @@ tags: [javascript]
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 300%;
+  top: 600%;
+  left: 200%;
+  right: 200%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
