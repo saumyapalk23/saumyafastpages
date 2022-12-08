@@ -167,7 +167,7 @@ tags: [javascript]
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 75%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
