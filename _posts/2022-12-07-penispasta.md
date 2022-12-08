@@ -8,6 +8,6 @@ categories: [pbl]
 tags: [javascript]
 ---
 
-{% include nav_frontend.html %}
+<!-- {% include nav_frontend.html %} -->
 
 ![]({{ site.baseurl }}/images/penispasta.jpg "Penis Pasta")
