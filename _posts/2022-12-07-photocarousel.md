@@ -139,11 +139,6 @@ tags: [javascript]
   <span class="dot" onclick="currentSlide(12)"></span>
   <span class="dot" onclick="currentSlide(13)"></span>
   <span class="dot" onclick="currentSlide(14)"></span>
-  <span class="dot" onclick="currentSlide(15)"></span>
-  <span class="dot" onclick="currentSlide(16)"></span>
-
-
-
 </div>
 </html>
 
