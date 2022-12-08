@@ -15,105 +15,103 @@ tags: [javascript]
 <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1</div>
+    <img src="{{site.baseurl}}//imagescarousel/IMG_7613.jpg" style="width:100%">
+    <div class="text">:)</div>
+  </div>
 
 <div class="mySlides fade">
-    <div class="numbertext">2 / 16</div>
+    <div class="numbertext">2</div>
     <img src="{{site.baseurl}}//imagescarousel/IMG_1157.JPG" style="width:100%">
-    <div class="text">Caption Text</div>
+    <div class="text">kenna and i!!</div>
   </div>
 
-
   <div class="mySlides fade">
-    <div class="numbertext">3 / 16</div>
+    <div class="numbertext">3</div>
     <img src="{{site.baseurl}}//imagescarousel/IMG_6068.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
+    <div class="text">andrea</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">4 / 16</div>
+    <div class="numbertext">4</div>
     <img src="{{site.baseurl}}//imagescarousel/0101161417_HDR_Original.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">cuzzins</div>
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">5 / 16</div>
-    <img src="{{site.baseurl}}//imagescarousel/IMG_7613.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
-  </div>
-
-   <div class="mySlides fade">
+   <!-- <div class="mySlides fade">
     <div class="numbertext">6 / 16</div>
     <img src="{{site.baseurl}}//imagescarousel/IMG_0653.jpg" style="width:100%">
     <div class="text">Caption Three</div>
-  </div>
+  </div> -->
 
   <div class="mySlides fade">
-    <div class="numbertext">7 / 16</div>
+    <div class="numbertext">5</div>
     <img src="{{site.baseurl}}//imagescarousel/9B60FA77-226E-4C2C-A2CE-8C1BA9A9DA77.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">yess park outing</div>
   </div>
 
   
   <div class="mySlides fade">
-    <div class="numbertext">8 / 16</div>
+    <div class="numbertext">6</div>
     <img src="{{site.baseurl}}//imagescarousel/446A7ECE-D696-432A-8408-92317011EDFD.jpg" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">9 / 16</div>
+    <div class="numbertext">7</div>
     <img src="{{site.baseurl}}//imagescarousel/446A7ECE-D696-432A-8408-92317011EDFD.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">target run?!</div>
   </div>
 
-  <div class="mySlides fade">
+  <!-- <div class="mySlides fade">
     <div class="numbertext">10 / 16</div>
     <img src="{{site.baseurl}}//imagescarousel/imageone.jpg" style="width:100%">
     <div class="text">Caption Three</div>
-  </div>
+  </div> -->
 
   <div class="mySlides fade">
-    <div class="numbertext">1 / 16</div>
+    <div class="numbertext">8</div>
     <img src="{{site.baseurl}}//imagescarousel/IMG_3501.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
+    <div class="text">hopefully no one finds this</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">11 / 16</div>
+    <div class="numbertext">9</div>
     <img src="{{site.baseurl}}//imagescarousel/imagetwo.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">hehe</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">12 / 16</div>
+    <div class="numbertext">10</div>
     <img src="{{site.baseurl}}//imagescarousel/imagethree.JPG" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">shrug</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">13 / 16</div>
+    <div class="numbertext">11</div>
     <img src="{{site.baseurl}}//imagescarousel/PHOTO-2022-05-29-16-05-27.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">shrug</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">14 / 16</div>
+    <div class="numbertext">12</div>
     <img src="{{site.baseurl}}//imagescarousel/PHOTO-2022-06-17-16-58-00.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">yessir SASA</div>
   </div>
 
   
   <div class="mySlides fade">
-    <div class="numbertext">15 / 16</div>
+    <div class="numbertext">13</div>
     <img src="{{site.baseurl}}//imagescarousel/qinnis.jpg" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
 
   
   <div class="mySlides fade">
-    <div class="numbertext">16 / 16</div>
+    <div class="numbertext">14</div>
     <img src="{{site.baseurl}}//imagescarousel/queens.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">qian and i</div>
   </div>
 
   <!-- Next and previous buttons -->
