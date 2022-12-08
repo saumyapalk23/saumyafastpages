@@ -2,7 +2,7 @@
 layout: default
 title: penis pasta oh my god
 description: dedicated to andrea
-permalink: /frontend12/penispasta
+permalink: /youwontfindthis/penispasta
 # image: /images/IMG_3501.jpg
 categories: [pbl]
 tags: [javascript]
