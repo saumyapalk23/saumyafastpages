@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://saumyapalk23.github.io/saumyafastpages/frontend12/penispasta</loc>
+<lastmod>2018-12-07T00:00:00-06:00</lastmod>
+</url>
+<url>
 <loc>https://saumyapalk23.github.io/saumyafastpages/markdown/2020/01/14/test-markdown-post.html</loc>
 <lastmod>2020-01-14T00:00:00-06:00</lastmod>
 </url>
@@ -175,10 +179,6 @@
 <url>
 <loc>https://saumyapalk23.github.io/saumyafastpages/jupyter/2022/12/06/unit6.html</loc>
 <lastmod>2022-12-06T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://saumyapalk23.github.io/saumyafastpages/frontend12/penispasta</loc>
-<lastmod>2022-12-07T00:00:00-06:00</lastmod>
 </url>
 <url>
 <loc>https://saumyapalk23.github.io/saumyafastpages/frontend12/PhotoCarousel</loc>
