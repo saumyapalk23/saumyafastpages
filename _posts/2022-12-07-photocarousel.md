@@ -50,51 +50,51 @@ tags: [javascript]
     <img src="{{site.baseurl}}/imagescarousel/446A7ECE-D696-432A-8408-92317011EDFD.jpg" style="width:100%">
     <div class="text">lolol</div>
   </div>
-
+<!-- 
   <div class="mySlides fade">
     <div class="numbertext">7</div>
     <img src="{{site.baseurl}}/imagescarousel/446A7ECE-D696-432A-8408-92317011EDFD.jpg" style="width:100%">
     <div class="text">yaws</div>
   </div>
-
+ -->
   <div class="mySlides fade">
-    <div class="numbertext">8</div>
+    <div class="numbertext">7</div>
     <img src="{{site.baseurl}}/imagescarousel/IMG_3501.jpg" style="width:100%">
     <div class="text">hopefully ppl dont see this</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">9</div>
+    <div class="numbertext">8</div>
     <img src="{{site.baseurl}}/imagescarousel/imagetwo.jpg" style="width:100%">
     <div class="text">yuppy</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">10</div>
+    <div class="numbertext">9</div>
     <img src="{{site.baseurl}}/imagescarousel/imagethree.JPG" style="width:100%">
     <div class="text">yaass</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">11</div>
+    <div class="numbertext">10</div>
     <img src="{{site.baseurl}}/imagescarousel/PHOTO-2022-05-29-16-05-27.jpg" style="width:100%">
     <div class="text">ayyy</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">12</div>
+    <div class="numbertext">11</div>
     <img src="{{site.baseurl}}/imagescarousel/PHOTO-2022-06-17-16-58-00.jpg" style="width:100%">
     <div class="text">wowza</div>
   </div>
   
   <div class="mySlides fade">
-    <div class="numbertext">13</div>
+    <div class="numbertext">12</div>
     <img src="{{site.baseurl}}/imagescarousel/qinnis.jpg" style="width:100%">
     <div class="text">yawzers</div>
   </div>
   
   <div class="mySlides fade">
-    <div class="numbertext">14</div>
+    <div class="numbertext">13</div>
     <img src="{{site.baseurl}}/imagescarousel/queens.png" style="width:100%">
     <div class="text">kweens</div>
   </div>
@@ -122,8 +122,6 @@ tags: [javascript]
   <span class="dot" onclick="currentSlide(11)"></span>
   <span class="dot" onclick="currentSlide(12)"></span>
   <span class="dot" onclick="currentSlide(13)"></span>
-  <span class="dot" onclick="currentSlide(14)"></span>
-
 
 
 </div>
