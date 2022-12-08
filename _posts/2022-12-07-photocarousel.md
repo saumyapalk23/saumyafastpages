@@ -91,7 +91,7 @@ tags: [javascript]
   <div class="mySlides fade">
     <div class="numbertext">11</div>
     <img src="{{site.baseurl}}//imagescarousel/PHOTO-2022-05-29-16-05-27.jpg" style="width:100%">
-    <div class="text">shrug</div>
+    <div class="text">yass</div>
   </div>
 
   <div class="mySlides fade">
@@ -104,7 +104,7 @@ tags: [javascript]
   <div class="mySlides fade">
     <div class="numbertext">13</div>
     <img src="{{site.baseurl}}//imagescarousel/qinnis.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">kweens</div>
   </div>
 
   
@@ -140,6 +140,7 @@ tags: [javascript]
   <span class="dot" onclick="currentSlide(13)"></span>
   <span class="dot" onclick="currentSlide(14)"></span>
 </div>
+
 </html>
 
 
