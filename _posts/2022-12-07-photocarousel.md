@@ -168,8 +168,8 @@ tags: [javascript]
   cursor: pointer;
   position: absolute;
   top: 600%;
-  left: 200%;
-  right: 200%;
+  /* left: 200%;
+  right: 200%; */
   width: auto;
   margin-top: -22px;
   padding: 16px;
