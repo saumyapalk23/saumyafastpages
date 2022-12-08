@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: penis pasta oh my god
 description: dedicated to andrea
 permalink: /youwontfindthis/penispasta
