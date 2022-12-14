@@ -49,8 +49,11 @@ permalink: /notesandvocab/
     <th>Notes</th>
   </tr>
   <tr>
-      <td>Alumni Notes </td>
-      <td><a href="https://saumyapalk23.github.io/saumyafastpages/markdown/2022/08/29/extracred.html">Alumni Notes</a></td>
+      <td>Extra Credit Notes </td>
+      <td><a href="https://saumyapalk23.github.io/saumyafastpages/markdown/2022/08/29/extracred.html">Alumni Notes 8/23</a></td>
+      <td><a href="https://saumyapalk23.github.io/saumyafastpages/markdown/2022/12/13/extracred2.html#insight-into-companiesoperations">Extra Credit Seminar 12/13</a></td>
+
+
 </table>
 
 
