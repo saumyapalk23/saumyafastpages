@@ -42,7 +42,7 @@ permalink: /notesandvocab/
         <td><a href="https://saumyapalk23.github.io/saumyafastpages/markdown/2022/08/28/blogbash.html">Week 2 Vocab</a></td>
 </table>
 
-### PBL Lessons
+### Extra Credit Notes
 
 <table>
   <tr>
@@ -52,6 +52,7 @@ permalink: /notesandvocab/
   <tr>
       <td>Extra Credit Notes </td>
       <td><a href="https://saumyapalk23.github.io/saumyafastpages/markdown/2022/08/29/extracred.html">Alumni Notes 8/23</a></td>
+      <td>Extra Credit Notes 12/13</td>
       <td><a href="https://saumyapalk23.github.io/saumyafastpages/markdown/2022/12/13/extracred2.html">Extra Credit Seminar 12/13</a></td>
 
 
