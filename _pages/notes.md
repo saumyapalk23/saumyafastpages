@@ -43,7 +43,6 @@ permalink: /notesandvocab/
 </table>
 
 ### PBL Lessons
-<table>
   <tr>
     <th>Topic</th>
     <th>Notes</th>
