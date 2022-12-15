@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      7 min read
     
 </span></p>
 
@@ -260,6 +260,142 @@ product sum: 17079
 </div>
 </div>
 
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following are examples of some of the items that can be found in 2D arrays:</p>
+<p>Casting, specifically for division: In a 2D array, you can use casting to convert the elements in the array from one data type to another. For example, if you have a 2D array of double values, you can use casting to convert them to int values and then perform integer division on the elements.</p>
+<p>Wrapper classes: Wrapper classes, such as Integer and Double, are used to store primitive data types (such as int and double) as objects. This can be useful in a 
+2D array when you want to store elements of different data types in the same array.</p>
+<p>Concatenation: Concatenation is the process of combining two or more strings into a single string. In a 2D array, you can use concatenation to combine the elements of the array into a single string. For example, if you have a 2D array of strings, you can use concatenation to create a single string that contains all the elements of the array.</p>
+<p>Math class: The Math class in Java provides a variety of methods for performing mathematical operations, such as trigonometric functions, logarithms, and random number generation. In a 2D array, you can use the Math class to generate random numbers and perform other mathematical operations on the elements of the array.</p>
+<p>Compound boolean expressions: A compound boolean expression is a logical expression that consists of two or more sub-expressions joined by logical operators, such as AND and OR. In a 2D array, you can use compound boolean expressions to perform complex operations on the elements of the array, such as searching for a specific element or sorting the array.</p>
+<p>Truth tables: A truth table is a mathematical table that shows the truth values of a logical expression for all possible combinations of its variables. In a 2D array, you can use truth tables to evaluate the truth values of complex expressions involving the elements of the array.</p>
+<p>Comparing numbers: In a 2D array, you can use comparison operators, such as &gt;, &lt;, and ==, to compare the elements of the array to each other or to a specified value. For example, you can use a for loop to iterate over the elements of the array and compare each element to a specified threshold value to determine whether it is greater than, less than, or equal to the threshold.</p>
+<p>Comparing strings: In a 2D array, you can use the equals() method to compare the elements of the array to each other or to a specified string. For example, you can use a for loop to iterate over the elements of the array and compare each element to a specified search string to determine whether they are equal.</p>
+<p>Comparing objects: In a 2D array, you can use the compareTo() method to compare the elements of the array to each other or to a specified object. For example, you can use a for loop to iterate over the elements of the array and compare each element to a specified target object to determine whether they are equal or whether one is greater than or less than the other.</p>
+<p>for loops: In a 2D array, you can use a for loop to iterate over the elements of the array and perform operations on them. For example, you can use a for loop to search for a specific element in the array or to sort the elements of the array in ascending or descending order.</p>
+<p>while loops: In a 2D array, you can use a while loop to iterate over the elements of the array and perform operations on them. For example, you can use a while loop to search for a specific element in the array or to sort the elements of the array in ascending or descending order.</p>
+<p>Nested loops: In a 2D array, you can use nested loops to iterate over the elements of the array and perform operations on them. For example, you can use a nested loop to search for a specific element in the array or to sort the elements of the array in ascending or descending order.</p>
+<p>Classes: In a 2D array, you can use a class to define the data type of the elements of the array. For example, you can create a Point class to represent a point in 2D space, and then create a 2D array of Point objects to store a set of points.</p>
+<p>De Morgan's law: In a 2D array, you can use De Morgan's law to manipulate logical expressions involving the elements of the array. For example, if you have a 2D array of boolean values, you can use De Morgan's law to convert an expression involving the AND and OR operators into an equivalent expression involving the NOT and XOR operators.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">DeMorganExample</span> <span class="p">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Create a 2D array of boolean values</span>
+    <span class="kt">boolean</span><span class="o">[][]</span> <span class="n">array</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">boolean</span><span class="o">[][]</span> <span class="p">{</span>
+      <span class="p">{</span><span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">},</span>
+      <span class="p">{</span><span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">},</span>
+      <span class="p">{</span><span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">}</span>
+    <span class="p">};</span>
+  
+
+<span class="c1">// Use De Morgan's law to convert an expression involving the AND and OR operators</span>
+<span class="c1">// into an equivalent expression involving the NOT and XOR operators</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">boolean</span> <span class="n">a</span> <span class="o">=</span> <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="p">;</span>
+        <span class="kt">boolean</span> <span class="n">b</span> <span class="o">=</span> <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span><span class="p">;</span>
+        <span class="kt">boolean</span> <span class="n">c</span> <span class="o">=</span> <span class="n">array</span><span class="o">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="p">;</span>
+        <span class="kt">boolean</span> <span class="n">d</span> <span class="o">=</span> <span class="n">array</span><span class="o">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="o">][</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span><span class="p">;</span>
+        <span class="kt">boolean</span> <span class="n">e</span> <span class="o">=</span> <span class="o">!</span><span class="p">(</span><span class="n">a</span> <span class="o">||</span> <span class="n">b</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="p">(</span><span class="n">c</span> <span class="o">||</span> <span class="n">d</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Example</span> <span class="p">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Create a 2D array of strings</span>
+    <span class="n">String</span><span class="o">[][]</span> <span class="n">array</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="o">[][]</span> <span class="p">{</span>
+      <span class="p">{</span><span class="s">"cat"</span><span class="p">,</span> <span class="s">"dog"</span><span class="p">,</span> <span class="s">"bird"</span><span class="p">},</span>
+      <span class="p">{</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">},</span>
+      <span class="p">{</span><span class="s">"red"</span><span class="p">,</span> <span class="s">"green"</span><span class="p">,</span> <span class="s">"blue"</span><span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="c1">// Call the tester method</span>
+    <span class="n">test</span><span class="p">(</span><span class="n">array</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Tester method that generates output</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">test</span><span class="p">(</span><span class="n">String</span><span class="o">[][]</span> <span class="n">array</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Use a for loop to iterate over the elements of the array</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Compare the current element to a specified string</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">"cat"</span><span class="p">))</span> <span class="p">{</span>
+          <span class="c1">// Use De Morgan's law to convert an expression involving the AND and OR operators</span>
+          <span class="c1">// into an equivalent expression involving the NOT and XOR operators</span>
+          <span class="kt">boolean</span> <span class="n">a</span> <span class="o">=</span> <span class="o">!</span><span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">"dog"</span><span class="p">);</span>
+          <span class="kt">boolean</span> <span class="n">b</span> <span class="o">=</span> <span class="o">!</span><span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">"bird"</span><span class="p">);</span>
+          <span class="kt">boolean</span> <span class="n">c</span> <span class="o">=</span> <span class="o">!</span><span class="p">(</span><span class="n">a</span> <span class="o">||</span> <span class="n">b</span><span class="p">);</span>
+
+          <span class="c1">// Use concatenation to combine the elements of the array into a single string</span>
+          <span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span> <span class="o">+</span> <span class="s">", "</span> <span class="o">+</span> <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="mi">1</span><span class="o">]</span> <span class="o">+</span> <span class="s">", "</span> <span class="o">+</span> <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="mi">2</span><span class="o">]</span><span class="p">;</span>
+
+          <span class="c1">// Create a Point class to represent a point in 2D space</span>
+          <span class="kd">class</span> <span class="nc">Point</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">x</span><span class="p">;</span>
+            <span class="kt">int</span> <span class="n">y</span><span class="p">;</span>
+
+            <span class="kd">public</span> <span class="nf">Point</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+              <span class="k">this</span><span class="p">.</span><span class="na">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">;</span>
+              <span class="k">this</span><span class="p">.</span><span class="na">y</span> <span class="o">=</span> <span class="n">y</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="nd">@Override</span>
+            <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
+              <span class="k">return</span> <span class="s">"("</span> <span class="o">+</span> <span class="n">x</span> <span class="o">+</span> <span class="s">", "</span> <span class="o">+</span> <span class="n">y</span> <span class="o">+</span> <span class="s">")"</span><span class="p">;</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+
+          <span class="c1">// Create a Point object using the current indices of the array</span>
+          <span class="n">Point</span> <span class="n">p</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Point</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">);</span>
+
+          <span class="c1">// Print the resulting values</span>
+          <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Element: "</span> <span class="o">+</span> <span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">][</span><span class="n">j</span><span class="o">]</span><span class="p">);</span>
+          <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"De Morgan's law: "</span> <span class="o">+</span> <span class="n">c</span><span class="p">);</span>
+          <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Concatenated string: "</span> <span class="o">+</span> <span class="n">s</span><span class="p">);</span>
+          <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Point: "</span> <span class="o">+</span> <span class="n">p</span><span class="p">);</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
