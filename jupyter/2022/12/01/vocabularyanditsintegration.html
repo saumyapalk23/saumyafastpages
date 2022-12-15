@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      16 min read
+      17 min read
     
 </span></p>
 
@@ -146,6 +146,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Constructors">Constructors </a></li>
 <li class="toc-entry toc-h2"><a href="#Accessor-&-Mutator-methods">Accessor &amp; Mutator methods </a></li>
 <li class="toc-entry toc-h2"><a href="#Static/Class-Variables">Static/Class Variables </a></li>
+<li class="toc-entry toc-h2"><a href="#Java-Recursion">Java Recursion </a></li>
 <li class="toc-entry toc-h2"><a href="#Public,-Private,-Protected;-Access-Modifiers">Public, Private, Protected; Access Modifiers </a></li>
 <li class="toc-entry toc-h2"><a href="#Static-methods,-Class-methods">Static methods, Class methods </a></li>
 <li class="toc-entry toc-h2"><a href="#this-Keyword">this Keyword </a></li>
@@ -1710,6 +1711,58 @@ The average of those numbers are 11
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Java-Recursion">
+<a class="anchor" href="#Java-Recursion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Java Recursion<a class="anchor-link" href="#Java-Recursion"> </a>
+</h2>
+<ul>
+<li>the process of making a function call itself</li>
+<li>provides a way to break complicated problems down into simple problems which are easier to solve</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//ads all of the #s up to 10</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kt">int</span> <span class="n">result</span> <span class="o">=</span> <span class="n">sum</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">result</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">sum</span><span class="p">(</span><span class="kt">int</span> <span class="n">k</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">k</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">k</span> <span class="o">+</span> <span class="n">sum</span><span class="p">(</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/saumyafastpages/images/copied_from_nb/images/recursionn.png" alt="pi1"></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
