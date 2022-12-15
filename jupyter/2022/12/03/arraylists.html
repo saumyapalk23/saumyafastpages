@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      8 min read
     
 </span></p>
 
@@ -284,162 +284,79 @@ Hashcode: -609606810
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Arrays</span><span class="p">;</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
 <span class="kn">import</span> <span class="nn">java.util.Random</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayExample</span> <span class="p">{</span>
-  <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">values</span><span class="p">;</span>
-  <span class="kd">private</span> <span class="kd">static</span> <span class="n">Integer</span><span class="o">[]</span> <span class="n">wrapped</span><span class="p">;</span>
+<span class="c1">// Parent class</span>
+<span class="kd">class</span> <span class="nc">Animal</span> <span class="p">{</span>
+  <span class="c1">// Private member variable</span>
+  <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
 
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// Initialize the array with random values</span>
-    <span class="n">values</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">10</span><span class="o">]</span><span class="p">;</span>
+  <span class="c1">// Constructor</span>
+  <span class="kd">public</span> <span class="nf">Animal</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Getter method for the name</span>
+  <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Child class that extends the Animal class</span>
+<span class="kd">class</span> <span class="nc">Cat</span> <span class="kd">extends</span> <span class="n">Animal</span> <span class="p">{</span>
+  <span class="c1">// Private member variable</span>
+  <span class="kd">private</span> <span class="kt">int</span> <span class="n">lives</span><span class="p">;</span>
+
+  <span class="c1">// Constructor that calls the parent class constructor</span>
+  <span class="kd">public</span> <span class="nf">Cat</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">lives</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+    <span class="k">this</span><span class="p">.</span><span class="na">lives</span> <span class="o">=</span> <span class="n">lives</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Getter method for the number of lives</span>
+  <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getLives</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">lives</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayListExample</span> <span class="p">{}</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+    <span class="c1">// Create a Scanner object to read input from the user</span>
+    <span class="n">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+    <span class="c1">// Create an ArrayList of Animal objects</span>
+    <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Animal</span><span class="o">&gt;</span> <span class="n">animals</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+
+    <span class="c1">// Use a for loop to add random Cat objects to the list</span>
     <span class="n">Random</span> <span class="n">rand</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Random</span><span class="p">();</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">values</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">rand</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s">"Cat"</span> <span class="o">+</span> <span class="n">i</span><span class="p">;</span>
+      <span class="kt">int</span> <span class="n">lives</span> <span class="o">=</span> <span class="n">rand</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+      <span class="n">animals</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="k">new</span> <span class="n">Cat</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">lives</span><span class="p">));</span>
     <span class="p">}</span>
 
-    <span class="c1">// Print the array</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Original array: "</span> <span class="o">+</span> <span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">values</span><span class="p">));</span>
+    <span class="c1">// Prompt the user to enter some text</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Enter some text: "</span><span class="p">);</span>
 
-    <span class="c1">// Truncate and round the array elements</span>
-    <span class="n">processArray</span><span class="p">();</span>
+    <span class="c1">// Read the user's input from the keyboard</span>
+    <span class="n">String</span> <span class="n">input</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
 
-    <span class="c1">// Print the updated array</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Truncated and rounded array: "</span> <span class="o">+</span> <span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">values</span><span class="p">));</span>
+    <span class="c1">// Print the user's input</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"You entered: "</span> <span class="o">+</span> <span class="n">input</span><span class="p">);</span>
 
-    <span class="c1">// Use a wrapper class to store the array elements as objects</span>
-    <span class="n">wrapped</span><span class="p">();</span>
-
-    <span class="c1">// Print the squared array</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Squared array: "</span> <span class="o">+</span> <span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">wrapped</span><span class="p">));</span>
-
-    <span class="c1">// Use a while loop to iterate over the array</span>
+    <span class="c1">// Use a while loop to print the names of the cats</span>
     <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="na">length</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">// Print the current element</span>
-      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Element at index "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">": "</span> <span class="o">+</span> <span class="n">wrapped</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">animals</span><span class="p">.</span><span class="na">size</span><span class="p">())</span> <span class="p">{</span>
+      <span class="c1">// Use the getName() method to get the name of the current cat</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Name: "</span> <span class="o">+</span> <span class="n">animals</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="na">getName</span><span class="p">());</span>
       <span class="n">i</span><span class="o">++</span><span class="p">;</span>
     <span class="p">}</span>
-  <span class="p">}</span>
-
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">processArray</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">// Truncate the element by casting it to an integer</span>
-      <span class="kt">int</span> <span class="n">truncated</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">values</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">;</span>
-      <span class="c1">// Round the element by adding 0.5 and casting to an integer</span>
-      <span class="kt">int</span> <span class="n">rounded</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="n">values</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">);</span>
-
-      <span class="c1">// Update the array with the truncated and rounded values</span>
-      <span class="n">values</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">truncated</span><span class="p">;</span>
-      <span class="n">values</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">rounded</span><span class="p">;</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">wrapped</span><span class="p">()</span> <span class="p">{</span>
-    <span class="n">wrapped</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Integer</span><span class="o">[</span><span class="n">values</span><span class="p">.</span><span class="na">length</span><span class="o">]</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">// Wrap the element in an Integer object</span>
-      <span class="n">wrapped</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Integer</span><span class="p">(</span><span class="n">values</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="c1">// Use the Math class to square the array elements</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">values</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">// Square the element using the Math.pow method</span>
-      <span class="n">wrapped</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="n">wrapped</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">testArrayExample</span><span class="p">()</span> <span class="p">{</span>
-  <span class="c1">// Create an array of integers</span>
-  <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[]</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">};</span>
-
-  <span class="n">ArrayProcessor</span> <span class="n">processor</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayProcessor</span><span class="p">(</span><span class="n">arr</span><span class="p">);</span>
-
-  <span class="c1">// Truncate and round the elements of the array</span>
-  <span class="n">processor</span><span class="p">.</span><span class="na">processArray</span><span class="p">();</span>
-  <span class="n">processor</span><span class="p">.</span><span class="na">wrapped</span><span class="p">();</span>
-
-  <span class="c1">// Print the updated array</span>
-  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Updated array: "</span> <span class="o">+</span> <span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">arr</span><span class="p">));</span>
-  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Squared array: "</span> <span class="o">+</span> <span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">wrapped</span><span class="p">));</span>
-  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Element at index "</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="s">": "</span> <span class="o">+</span> <span class="n">wrapped</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
-  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Truncated and rounded array: "</span> <span class="o">+</span> <span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">values</span><span class="p">));</span>
 <span class="p">}</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Arrays</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nn">java.util.Random</span><span class="p">;</span>
-
-  <span class="c1">// Subclass to process array elements</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kd">class</span> <span class="nc">ArrayProcessor</span> <span class="p">{</span>
-    <span class="kd">private</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">array</span><span class="p">;</span>
-
-    <span class="c1">// Constructor</span>
-    <span class="kd">public</span> <span class="nf">ArrayProcessor</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">this</span><span class="p">.</span><span class="na">array</span> <span class="o">=</span> <span class="n">arr</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="c1">// Method to truncate and round the array elements</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">processArray</span><span class="p">()</span> <span class="p">{</span>
-      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">this</span><span class="p">.</span><span class="na">array</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// Truncate the element by casting it to an integer</span>
-        <span class="kt">int</span> <span class="n">truncated</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="k">this</span><span class="p">.</span><span class="na">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">;</span>
-        <span class="c1">// Round the element by adding 0.5 and casting to an integer</span>
-        <span class="kt">int</span> <span class="n">rounded</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">);</span>
-
-        <span class="c1">// Update the array with the truncated and rounded values</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">truncated</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">rounded</span><span class="p">;</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-
-  <span class="c1">// Tester method to test the ArrayProcessor class</span>
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">testArrayProcessor</span><span class="p">()</span> <span class="p">{}</span>
-    <span class="c1">// Create an array of integers</span>
-    <span class="kt">int</span><span class="o">[]</span> <span class="n">arr</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[]</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">};</span>
-  
-    <span class="c1">// Create an instance of the ArrayProcessor class</span>
-    <span class="n">ArrayProcessor</span> <span class="n">processor</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayProcessor</span><span class="p">(</span><span class="n">arr</span><span class="p">);</span>
-  
-    <span class="c1">// Truncate and round the elements of the array</span>
-    <span class="n">processor</span><span class="p">.</span><span class="na">processArray</span><span class="p">();</span>
-  
-    <span class="c1">// Print the updated array</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Updated array: "</span> <span class="o">+</span> <span class="n">Arrays</span><span class="p">.</span><span class="na">toString</span><span class="p">(</span><span class="n">arr</span><span class="p">));</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Updated array: [1, 2, 3, 4, 5, 6]
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
