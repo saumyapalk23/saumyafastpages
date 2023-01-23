@@ -235,4 +235,3 @@ function clearCalc () { // clears calculator
 }
 </script>
 
-</body>
