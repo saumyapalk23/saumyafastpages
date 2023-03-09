@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 title: Frontend Changes
 permalink: /frontend12/updates
 ---
