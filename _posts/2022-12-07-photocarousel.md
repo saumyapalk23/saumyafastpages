@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 title: Photo Carousel
 description: an awesome carousel
 permalink: /frontend12/PhotoCarousel
