@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -494,7 +494,28 @@ Arrays can be used to store multiple values of the same type, and provide useful
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ScrambleWord</span> <span class="p">{</span>
-
+    <span class="kd">public</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">scramble</span><span class="p">(</span><span class="n">String</span> <span class="n">word</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">curChar</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="n">String</span> <span class="n">result</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
+        <span class="c1">// iterates through the word as long as the current character index is less than the final index in the word (keeps last letter open for potential pairs, so doesn't check the last letter until it breaks out of the loop)</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">curChar</span> <span class="o">&lt;</span> <span class="n">word</span><span class="p">.</span><span class="na">length</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// if both letters are A, add one as is and don't scramble</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">word</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">curChar</span><span class="p">,</span> <span class="n">curChar</span> <span class="o">+</span> <span class="mi">1</span><span class="p">).</span><span class="na">equals</span><span class="p">(</span><span class="s">"a"</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">word</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">curChar</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">curChar</span> <span class="o">+</span> <span class="mi">2</span><span class="p">).</span><span class="na">equals</span><span class="p">(</span><span class="s">"a"</span><span class="p">))</span> <span class="p">{</span>
+                <span class="n">result</span> <span class="o">+=</span> <span class="n">word</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">curChar</span><span class="p">,</span> <span class="n">curChar</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+                <span class="n">curChar</span><span class="o">++</span><span class="p">;</span> <span class="c1">// increment the character index by 1 because no scrambling is necessary</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="c1">// if the condition in the if statement is false, scramble and add</span>
+                <span class="n">result</span> <span class="o">+=</span> <span class="s">"a"</span><span class="p">;</span> <span class="c1">// add the letter A to the result</span>
+                <span class="n">result</span> <span class="o">+=</span> <span class="n">word</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">curChar</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">curChar</span> <span class="o">+</span> <span class="mi">2</span><span class="p">);</span> <span class="c1">// add the second letter to the result</span>
+                <span class="n">curChar</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">;</span> <span class="c1">// increment the character index by 2 to allow for swap of A and following letter</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="c1">// check whether curChar is less than the total length of the string, regardless of whether there are more characters in the string that can form a pair with the current character</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">curChar</span> <span class="o">&lt;</span> <span class="n">word</span><span class="p">.</span><span class="na">length</span><span class="p">())</span> <span class="p">{</span>
+            <span class="n">result</span> <span class="o">+=</span> <span class="n">word</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">curChar</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="n">result</span><span class="p">;</span> <span class="c1">// return the scrambled word</span>
+    <span class="p">}</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">scrambleOrRemove</span><span class="p">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">wordList</span><span class="p">,</span> <span class="kt">int</span> <span class="n">minWordLength</span><span class="p">){</span>
     <span class="c1">// Loop through each word in the wordList</span>
     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">wordList</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
@@ -505,7 +526,8 @@ Arrays can be used to store multiple values of the same type, and provide useful
             <span class="k">continue</span><span class="p">;</span>
         <span class="p">}</span>
         <span class="c1">// Scramble the word</span>
-        <span class="n">String</span> <span class="n">scrambled</span> <span class="o">=</span> <span class="n">scramble</span><span class="p">(</span><span class="n">word</span><span class="p">);</span>
+        <span class="n">String</span> <span class="n">scrambled</span> <span class="o">=</span> <span class="n">ScrambleWord</span><span class="p">.</span><span class="na">scramble</span><span class="p">(</span><span class="n">word</span><span class="p">);</span>
+        <span class="c1">//String scrambled = scramble(word);</span>
         <span class="c1">// If the scrambled word is the same as the original word, remove the word from the list</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">word</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">scrambled</span><span class="p">)){</span>
             <span class="n">wordList</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
@@ -536,21 +558,34 @@ Arrays can be used to store multiple values of the same type, and provide useful
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
 <span class="kn">import</span> <span class="nn">java.util.List</span><span class="p">;</span>
-
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">wordList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
         <span class="n">wordList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"apple"</span><span class="p">);</span>
         <span class="n">wordList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"hello"</span><span class="p">);</span>
         <span class="n">wordList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"whoa"</span><span class="p">);</span>
-
-        <span class="n">ScrambleWord</span><span class="p">.</span><span class="na">scrambleOrRemove</span><span class="p">(</span><span class="n">wordList</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span> 
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">wordList</span><span class="p">);</span> 
+        <span class="n">ScrambleWord</span><span class="p">.</span><span class="na">scrambleOrRemove</span><span class="p">(</span><span class="n">wordList</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">wordList</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[apale, aealo, ahaa]
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
