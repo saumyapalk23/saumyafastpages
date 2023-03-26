@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      9 min read
     
 </span></p>
 
@@ -153,6 +153,115 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">double</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="o">/</span><span class="mi">4</span><span class="p">;</span>
+<span class="kt">double</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">10</span><span class="o">/</span><span class="mf">4.0</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>4.5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">word</span> <span class="o">=</span><span class="s">"pizza"</span><span class="p">;</span>  
+<span class="kt">int</span> <span class="n">p</span> <span class="o">=</span> <span class="n">word</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">"zz"</span><span class="p">);</span>
+<span class="n">word</span><span class="p">.</span><span class="na">substring</span><span class="p">(</span><span class="n">p</span><span class="o">+</span><span class="mi">2</span><span class="p">);</span>
+<span class="n">p</span> <span class="o">=</span> <span class="n">word</span><span class="p">.</span><span class="na">indexOf</span><span class="p">(</span><span class="s">"zz"</span><span class="p">);</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">Sample</span> <span class="n">s</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Sample</span><span class="p">();</span>
+<span class="n">String</span> <span class="n">x</span> <span class="o">=</span> <span class="k">new</span> <span class="n">String</span><span class="p">(</span><span class="sc">'h'</span><span class="p">);</span>
+<span class="n">s</span><span class="p">.</span><span class="na">writeMe</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">Sample</span><span class="ansi-black-intense-fg ansi-bold"> s = new Sample();</span>
+<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
+<span class="ansi-red-intense-fg ansi-bold">  symbol:   class Sample</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">Sample s = new </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">Sample</span><span class="ansi-black-intense-fg ansi-bold">();</span>
+<span class="ansi-red-intense-fg ansi-bold">cannot find symbol</span>
+<span class="ansi-red-intense-fg ansi-bold">  symbol:   class Sample</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -523,7 +632,9 @@ Arrays can be used to store multiple values of the same type, and provide useful
         <span class="n">String</span> <span class="n">word</span> <span class="o">=</span> <span class="n">wordList</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
         <span class="c1">// If the word is shorter than the minimum word length, skip it</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">word</span><span class="p">.</span><span class="na">length</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">minWordLength</span><span class="p">){</span>
-            <span class="k">continue</span><span class="p">;</span>
+            <span class="k">continue</span><span class="p">;</span>            
+            <span class="c1">// else {</span>
+            <span class="c1">// wordList.remove(i);</span>
         <span class="p">}</span>
         <span class="c1">// Scramble the word</span>
         <span class="n">String</span> <span class="n">scrambled</span> <span class="o">=</span> <span class="n">ScrambleWord</span><span class="p">.</span><span class="na">scramble</span><span class="p">(</span><span class="n">word</span><span class="p">);</span>
@@ -564,7 +675,7 @@ Arrays can be used to store multiple values of the same type, and provide useful
         <span class="n">wordList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"apple"</span><span class="p">);</span>
         <span class="n">wordList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"hello"</span><span class="p">);</span>
         <span class="n">wordList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"whoa"</span><span class="p">);</span>
-        <span class="n">ScrambleWord</span><span class="p">.</span><span class="na">scrambleOrRemove</span><span class="p">(</span><span class="n">wordList</span><span class="p">,</span> <span class="mi">3</span><span class="p">);</span>
+        <span class="n">ScrambleWord</span><span class="p">.</span><span class="na">scrambleOrRemove</span><span class="p">(</span><span class="n">wordList</span><span class="p">,</span> <span class="mi">5</span><span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">wordList</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
@@ -581,7 +692,7 @@ Arrays can be used to store multiple values of the same type, and provide useful
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[apale, aealo, ahaa]
+<pre>[apale, aealo, whoa]
 </pre>
 </div>
 </div>
