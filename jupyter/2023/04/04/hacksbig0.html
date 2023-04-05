@@ -127,6 +127,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Big-O-Notation-for-Respective-Sorts">Big O Notation for Respective Sorts </a></li>
 <li class="toc-entry toc-h2"><a href="#Notes-Taken-from-a-Video">Notes Taken from a Video </a>
 <ul>
+<li class="toc-entry toc-h3"><a href="#constant-time">constant time </a></li>
 <li class="toc-entry toc-h3"><a href="#linear-time">linear time </a></li>
 <li class="toc-entry toc-h3"><a href="#quadratic-time">quadratic time </a></li>
 </ul>
@@ -196,14 +197,25 @@ window.onload = wrap_img;
 <p>5n --&gt; O(n)</p>
 </blockquote>
 </li>
-<li>certain terms dominate others
-### constant time<blockquote>
+<li>certain terms dominate others</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="constant-time">
+<a class="anchor" href="#constant-time" aria-hidden="true"><span class="octicon octicon-link"></span></a>constant time<a class="anchor-link" href="#constant-time"> </a>
+</h3>
+<blockquote>
 <p>x = 5 + (15*20);</p>
-</blockquote>
-</li>
+<ul>
 <li>^ is independent of input size N</li>
 <li>O(1) -- constant time</li>
 </ul>
+</blockquote>
 
 </div>
 </div>
@@ -503,7 +515,7 @@ window.onload = wrap_img;
             <span class="n">sum</span> <span class="o">+=</span> <span class="n">getSum</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
             <span class="n">time</span> <span class="o">+=</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="p">;</span>
         <span class="p">}</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Average random: "</span> <span class="o">+</span> <span class="n">sum</span> <span class="o">/</span> <span class="p">(</span><span class="n">TIMES</span> <span class="o">*</span> <span class="n">SIZE</span><span class="p">));</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Average: "</span> <span class="o">+</span> <span class="n">sum</span> <span class="o">/</span> <span class="p">(</span><span class="n">TIMES</span> <span class="o">*</span> <span class="n">SIZE</span><span class="p">));</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Total Seconds: "</span> <span class="o">+</span> <span class="n">time</span> <span class="o">/</span> <span class="mf">1000000000.0</span><span class="p">);</span>
     <span class="p">}</span>
 
@@ -599,7 +611,7 @@ Total Seconds: 0.0223919
             <span class="n">sum</span> <span class="o">+=</span> <span class="n">calculateSum</span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
             <span class="n">time</span> <span class="o">+=</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="p">;</span>
         <span class="p">}</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Average random: "</span> <span class="o">+</span> <span class="n">sum</span> <span class="o">/</span> <span class="p">(</span><span class="n">TIMES</span> <span class="o">*</span> <span class="n">SIZE</span><span class="p">));</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Average: "</span> <span class="o">+</span> <span class="n">sum</span> <span class="o">/</span> <span class="p">(</span><span class="n">TIMES</span> <span class="o">*</span> <span class="n">SIZE</span><span class="p">));</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Total Seconds: "</span> <span class="o">+</span> <span class="n">time</span> <span class="o">/</span> <span class="mf">1000000000.0</span><span class="p">);</span>
     <span class="p">}</span>
 
