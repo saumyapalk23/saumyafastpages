@@ -158,8 +158,8 @@ window.onload = wrap_img;
         <span class="n">Collections</span><span class="p">.</span><span class="na">sort</span><span class="p">(</span><span class="n">keys</span><span class="p">);</span>
 
         <span class="c1">// Perform search and measure time</span>
-        <span class="kt">long</span> <span class="n">binarySearchTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="kt">long</span> <span class="n">hashMapLookupTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">binarySearchTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">hashMapLookupTime</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numIterations</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
             <span class="c1">// Generate random keys to search for</span>
             <span class="n">List</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">searchKeys</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
@@ -168,12 +168,12 @@ window.onload = wrap_img;
             <span class="p">}</span>
 
             <span class="c1">// Binary Search</span>
-            <span class="kt">long</span> <span class="n">startTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+            <span class="kt">double</span> <span class="n">startTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
             <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">numSearches</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
                 <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="n">Collections</span><span class="p">.</span><span class="na">binarySearch</span><span class="p">(</span><span class="n">keys</span><span class="p">,</span> <span class="n">searchKeys</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">j</span><span class="p">));</span>
             <span class="p">}</span>
-            <span class="kt">long</span> <span class="n">endTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
-            <span class="kt">long</span> <span class="n">elapsedTime</span> <span class="o">=</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="p">;</span>
+            <span class="kt">double</span> <span class="n">endTime</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">nanoTime</span><span class="p">();</span>
+            <span class="kt">double</span> <span class="n">elapsedTime</span> <span class="o">=</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="p">;</span>
             <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">numIterations</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// Throw out highest and lowest times</span>
                 <span class="n">binarySearchTime</span> <span class="o">+=</span> <span class="n">elapsedTime</span><span class="p">;</span>
                 <span class="c1">//eliminate any outlier measurements that may skew the average time</span>
