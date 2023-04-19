@@ -824,7 +824,7 @@ Swaps: 59988
             <span class="n">time</span> <span class="o">+=</span> <span class="n">endTime</span> <span class="o">-</span> <span class="n">startTime</span><span class="p">;</span>
         <span class="p">}</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Average random: "</span> <span class="o">+</span> <span class="n">sum</span> <span class="o">/</span> <span class="p">(</span><span class="n">TIMES</span> <span class="o">*</span> <span class="n">SIZE</span><span class="p">));</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Total Seconds: "</span> <span class="o">+</span> <span class="n">time</span> <span class="o">/</span> <span class="mf">1000000000.0</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Total Seconds: "</span> <span class="o">+</span> <span class="n">time</span> <span class="o">/</span> <span class="mf">1e9</span><span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Comparisons: "</span> <span class="o">+</span> <span class="n">comparisons</span><span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Swaps: "</span> <span class="o">+</span> <span class="n">swaps</span><span class="p">);</span>
     <span class="p">}</span>
@@ -873,10 +873,10 @@ Swaps: 59988
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Average random: 2498.667033333333
-Total Seconds: 0.4052764
-Comparisons: 599684745
-Swaps: 299313505
+<pre>Average random: 2502.2884166666668
+Total Seconds: 0.2920404
+Comparisons: 899514094
+Swaps: 448955891
 </pre>
 </div>
 </div>
