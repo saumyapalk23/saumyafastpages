@@ -620,10 +620,10 @@
   
     
         ,"post57": {
-            "title": "Title",
+            "title": "Super Cool Random Test!",
             "content": "public class Book { private String title; private int id; private static int bookCount; public Book(String title) { this.title = title; this.id = (int)(Math.random()*10); this.bookCount = bookCount; } public static int getBookCount(){ return bookCount; } public static void setBookCount(int bookCount){ bookCount++; } public int getBookID(){ return id; } public String toString() { return (&quot;ID: &quot; + id + &quot;, Title: &quot; + title); } } . public class myClass{ public static void main(String[] args){ ArrayList&lt;Book&gt; books = new ArrayList&lt;&gt;(); Book Book1 = new Book(&quot;The Great Gatsby&quot;); Book Book2 = new Book(&quot;Candide&quot;); Book Book3 = new Book(&quot;Lolita&quot;); Book Book4 = new Book(&quot;To Kill a Mockingbird&quot;); Book Book5 = new Book(&quot;1984&quot;); books.add(Book1); books.add(Book2); books.add(Book3); books.add(Book4); books.add(Book5); System.out.println(Book1.toString()); System.out.println(Book2.toString()); System.out.println(Book3.toString()); System.out.println(Book4.toString()); System.out.println(Book5.toString()); int bookCount = 0; for(int i = 0; i &lt;books.size(); i++){ bookCount++; } System.out.println(&quot;Total # of books: &quot; + bookCount); }} myClass.main(null); . ID: 0, Title: The Great Gatsby ID: 0, Title: Candide ID: 1, Title: Lolita ID: 0, Title: To Kill a Mockingbird ID: 3, Title: 1984 Total # of books: 5 . public class Novel extends Book{ private String author; private String publication; public Novel(String title, String author, String publication) { super(title); this.author = author; this.publication = publication; } } .",
-            "url": "https://saumyapalk23.github.io/saumyafastpages/2022/04/20/test.html",
-            "relUrl": "/2022/04/20/test.html",
+            "url": "https://saumyapalk23.github.io/saumyafastpages/jupyter/2022/04/20/test.html",
+            "relUrl": "/jupyter/2022/04/20/test.html",
             "date": " • Apr 20, 2022"
         }
         
