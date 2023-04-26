@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      6 min read
     
 </span></p>
 
@@ -133,6 +133,364 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AndreaStudies</span><span class="p">{</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">year</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">input</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="o">[][]</span> <span class="n">presidents</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">AndreaStudies</span><span class="p">(){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">year</span> <span class="o">=</span> <span class="mi">1788</span> <span class="o">+</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span><span class="o">*</span><span class="mi">235</span><span class="p">);</span>
+        <span class="n">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"President: "</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">input</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
+        <span class="n">String</span><span class="o">[][]</span> <span class="n">presidents</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span><span class="s">"George Washington"</span><span class="p">,</span> <span class="s">"1789-1797"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"John Adams"</span><span class="p">,</span> <span class="s">"1797-1801"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Thomas Jefferson"</span><span class="p">,</span> <span class="s">"1801-1809"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"James Madison"</span><span class="p">,</span> <span class="s">"1809-1817"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"James Monroe"</span><span class="p">,</span> <span class="s">"1817-1825"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"John Quincy Adams"</span><span class="p">,</span> <span class="s">"1825-1829"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Andrew Jackson"</span><span class="p">,</span> <span class="s">"1829-1837"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Martin Van Buren"</span><span class="p">,</span> <span class="s">"1837-1841"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"William Henry Harrison"</span><span class="p">,</span> <span class="s">"1841"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"John Tyler"</span><span class="p">,</span> <span class="s">"1841-1845"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"James K. Polk"</span><span class="p">,</span> <span class="s">"1845-1849"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Zachary Taylor"</span><span class="p">,</span> <span class="s">"1849-1850"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Millard Fillmore"</span><span class="p">,</span> <span class="s">"1850-1853"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Franklin Pierce"</span><span class="p">,</span> <span class="s">"1853-1857"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"James Buchanan"</span><span class="p">,</span> <span class="s">"1857-1861"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Abraham Lincoln"</span><span class="p">,</span> <span class="s">"1861-1865"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Andrew Johnson"</span><span class="p">,</span> <span class="s">"1865-1869"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Ulysses S. Grant"</span><span class="p">,</span> <span class="s">"1869-1877"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Rutherford B. Hayes"</span><span class="p">,</span> <span class="s">"1877-1881"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"James A. Garfield"</span><span class="p">,</span> <span class="s">"1881"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Chester A. Arthur"</span><span class="p">,</span> <span class="s">"1881-1885"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Grover Cleveland"</span><span class="p">,</span> <span class="s">"1885-1889"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Benjamin Harrison"</span><span class="p">,</span> <span class="s">"1889-1893"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Grover Cleveland"</span><span class="p">,</span> <span class="s">"1893-1897"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"William McKinley"</span><span class="p">,</span> <span class="s">"1897-1901"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Theodore Roosevelt"</span><span class="p">,</span> <span class="s">"1901-1909"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"William Howard Taft"</span><span class="p">,</span> <span class="s">"1909-1913"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Woodrow Wilson"</span><span class="p">,</span> <span class="s">"1913-1921"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Warren G. Harding"</span><span class="p">,</span> <span class="s">"1921-1923"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Calvin Coolidge"</span><span class="p">,</span> <span class="s">"1923-1929"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Herbert Hoover"</span><span class="p">,</span> <span class="s">"1929-1933"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Franklin D. Roosevelt"</span><span class="p">,</span> <span class="s">"1933-1945"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Harry S. Truman"</span><span class="p">,</span> <span class="s">"1945-1953"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Dwight D. Eisenhower"</span><span class="p">,</span> <span class="s">"1953-1961"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"John F. Kennedy"</span><span class="p">,</span> <span class="s">"1961-1963"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Lyndon B. Johnson"</span><span class="p">,</span> <span class="s">"1963-1969"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Richard Nixon"</span><span class="p">,</span> <span class="s">"1969-1974"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Gerald Ford"</span><span class="p">,</span> <span class="s">"1974-1977"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Jimmy Carter"</span><span class="p">,</span> <span class="s">"1977-1981"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Ronald Reagan"</span><span class="p">,</span> <span class="s">"1981-1989"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"George H. W. Bush"</span><span class="p">,</span> <span class="s">"1989-1993"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Bill Clinton"</span><span class="p">,</span> <span class="s">"1993-2001"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"George W. Bush"</span><span class="p">,</span> <span class="s">"2001-2009"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Barack Obama"</span><span class="p">,</span> <span class="s">"2009-2017"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Donald Trump"</span><span class="p">,</span> <span class="s">"2017-2021"</span><span class="p">},</span>
+            <span class="p">{</span><span class="s">"Joe Biden"</span><span class="p">,</span> <span class="s">"2021-2025"</span><span class="p">}</span>
+        <span class="p">};</span>
+        
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getYear</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="n">year</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">revealPres</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">year</span><span class="p">){</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">presidents</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">for</span><span class="p">(</span><span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">presidents</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+                
+            <span class="p">}</span>
+
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="p">(</span><span class="s">"Andrea, you got this! "</span> <span class="o">+</span> <span class="s">"Year: "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">year</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">AndreaStudies</span> <span class="n">presidents</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AndreaStudies</span><span class="p">();</span>
+        
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">presidents</span><span class="p">.</span><span class="na">toString</span><span class="p">());</span>   
+        
+        <span class="c1">// Scanner name = new Scanner(System.in); </span>
+        <span class="c1">// String pres = name.nextLine();</span>
+        <span class="c1">// System.out.println(pres);</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">AndreaStudies</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>President: Andrea, you got this! Year: 1806
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+
+
+<span class="kn">import</span> <span class="nn">java.util.Random</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+
+    <span class="kd">static</span> <span class="n">String</span><span class="o">[]</span> <span class="n">words</span> <span class="o">=</span> <span class="p">{</span><span class="s">"apple"</span><span class="p">,</span> <span class="s">"banana"</span><span class="p">,</span> <span class="s">"cherry"</span><span class="p">,</span> <span class="s">"orange"</span><span class="p">,</span> <span class="s">"grape"</span><span class="p">,</span> <span class="s">"watermelon, pear, cherry, pomegranate, kiwi, guava"</span><span class="p">};</span>
+    <span class="kd">static</span> <span class="n">String</span> <span class="n">word</span> <span class="o">=</span> <span class="n">words</span><span class="o">[</span><span class="k">new</span> <span class="nf">Random</span><span class="p">().</span><span class="na">nextInt</span><span class="p">(</span><span class="n">words</span><span class="p">.</span><span class="na">length</span><span class="p">)</span><span class="o">]</span><span class="p">;</span>
+    <span class="kd">static</span> <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kd">static</span> <span class="kt">char</span><span class="o">[]</span> <span class="n">dashes</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="o">[</span><span class="n">word</span><span class="p">.</span><span class="na">length</span><span class="p">()</span><span class="o">]</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">dashes</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">dashes</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="sc">'_'</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">Scanner</span> <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+
+        <span class="kt">boolean</span> <span class="n">gameOver</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+        <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">gameOver</span><span class="p">)</span> <span class="p">{</span>
+                                  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">dashes</span><span class="p">);</span>
+           <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"You have seven chances to get the word wrong. The category is fruit. "</span><span class="p">);</span>
+
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Guess a letter: "</span><span class="p">);</span>
+            <span class="kt">char</span> <span class="n">guess</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">next</span><span class="p">().</span><span class="na">charAt</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+            <span class="kt">boolean</span> <span class="n">correctGuess</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">word</span><span class="p">.</span><span class="na">length</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">word</span><span class="p">.</span><span class="na">charAt</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">guess</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Correct!"</span><span class="p">);</span>
+                    <span class="n">dashes</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">guess</span><span class="p">;</span>
+                    <span class="n">correctGuess</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">correctGuess</span><span class="p">)</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Wrong guess, try again"</span><span class="p">);</span>
+                <span class="n">count</span><span class="o">++</span><span class="p">;</span>
+                <span class="n">hangmanImage</span><span class="p">();</span>
+                
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+              <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"You lost, the word was: "</span> <span class="o">+</span> <span class="n">word</span><span class="p">);</span>
+                <span class="n">gameOver</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="k">new</span> <span class="n">String</span><span class="p">(</span><span class="n">dashes</span><span class="p">).</span><span class="na">equals</span><span class="p">(</span><span class="n">word</span><span class="p">))</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Congratulations, you guessed the word!"</span><span class="p">);</span>
+                <span class="n">gameOver</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">hangmanImage</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  +---+"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  |   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"========="</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  +---+"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  |   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  O   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"========="</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  +---+"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  |   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  O   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  |   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"========="</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  +---+"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  |   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  O   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">" /|   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"========="</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  +---+"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  |   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  O   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">" /|\\  |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"========="</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="mi">6</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  +---+"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  |   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  O   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">" /|\\  |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">" /    |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"========="</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="o">==</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  +---+"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  |   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"  O   |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">" /|\\  |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">" / \\  |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"      |"</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"========="</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>_____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: Correct!
+a____
+You have seven chances to get the word wrong. The category is fruit. Guess a letter: </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">//unit 4 hw</span>
+<span class="c1">//number guesser</span>
+<span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.lang.Math</span><span class="p">;</span>
+ 
+<span class="n">Scanner</span> <span class="n">number</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span> 
+<span class="kt">float</span> <span class="n">num_float</span> <span class="o">=</span> <span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">number</span><span class="p">.</span><span class="na">nextLine</span><span class="p">());</span>  <span class="c1">// reads input</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num_float</span><span class="p">);</span>
+
+<span class="kt">double</span> <span class="n">random</span> <span class="o">=</span> <span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">10</span><span class="p">;</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">random</span><span class="p">);</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Number</span><span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+
+        <span class="k">while</span> <span class="p">(</span><span class="n">num_float</span> <span class="o">!=</span> <span class="n">random</span><span class="p">){</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">num_float</span> <span class="o">&lt;</span> <span class="n">random</span><span class="p">){</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"too low. higher"</span><span class="p">);</span>
+                <span class="c1">// Scanner number = new Scanner(System.in); </span>
+                <span class="kt">float</span> <span class="n">num_float</span> <span class="o">=</span> <span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">number</span><span class="p">.</span><span class="na">nextLine</span><span class="p">());</span>  
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num_float</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="k">if</span> <span class="p">(</span><span class="n">num_float</span> <span class="o">&gt;</span> <span class="n">random</span><span class="p">){</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"too high. lower"</span><span class="p">);</span>
+                <span class="n">Scanner</span> <span class="n">number</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span> 
+                <span class="kt">float</span> <span class="n">num_float</span> <span class="o">=</span> <span class="n">Integer</span><span class="p">.</span><span class="na">parseInt</span><span class="p">(</span><span class="n">number</span><span class="p">.</span><span class="na">nextLine</span><span class="p">());</span>  
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num_float</span><span class="p">);</span>
+            <span class="p">}</span>
+            
+           
+    <span class="p">}</span>
+
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"you got it!"</span><span class="p">);</span>
+    
+
+
+
+    <span class="p">}</span>
+
+<span class="p">}</span>
+<span class="n">Number</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
     
     
 <div class="cell border-box-sizing code_cell rendered">

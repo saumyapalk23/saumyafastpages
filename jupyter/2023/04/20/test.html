@@ -145,7 +145,6 @@ window.onload = wrap_img;
     <span class="kd">private</span> <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
     <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">bookCount</span><span class="p">;</span>
     <span class="kd">private</span> <span class="kt">long</span> <span class="n">time</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="kt">int</span> <span class="n">checkOuts</span><span class="p">;</span>
     <span class="c1">// private long currentTimeMillis;</span>
 
     <span class="kd">public</span> <span class="nf">Book</span><span class="p">(</span><span class="n">String</span> <span class="n">title</span><span class="p">)</span>
@@ -154,7 +153,6 @@ window.onload = wrap_img;
         <span class="k">this</span><span class="p">.</span><span class="na">id</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span><span class="o">*</span><span class="mi">100</span><span class="p">);</span>
         <span class="n">bookCount</span> <span class="o">=</span> <span class="n">bookCount</span><span class="p">;</span>
         <span class="n">time</span> <span class="o">=</span> <span class="n">System</span><span class="p">.</span><span class="na">currentTimeMillis</span><span class="p">();</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">checkOuts</span> <span class="o">=</span> <span class="n">checkOuts</span><span class="p">;</span>
     <span class="p">}</span>
     <span class="kd">public</span> <span class="n">String</span> <span class="nf">getTitle</span><span class="p">(){</span>
         <span class="k">return</span> <span class="n">title</span><span class="p">;</span>
@@ -335,7 +333,7 @@ window.onload = wrap_img;
     <span class="k">try</span> <span class="p">{</span>
         <span class="n">Thread</span><span class="p">.</span><span class="na">sleep</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span> <span class="c1">//waits 3s</span>
     <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">InterruptedException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span> <span class="c1">//handle any exceptions that </span>
-        <span class="c1">//may be thrown if the sleep is interrupted before it completes.</span>
+        <span class="c1">//may be thrown if the sleep is interrupted before it completes</span>
         <span class="n">e</span><span class="p">.</span><span class="na">printStackTrace</span><span class="p">();</span> <span class="c1">//used to print the stack trace of an exception</span>
         <span class="c1">//When an exception occurs, shows the sequence of method calls that led up to the exception</span>
     <span class="p">}</span>
@@ -371,13 +369,13 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Books: ID: 98, Title: The Great Gatsby, Shelf Life:  3 year(s), Expired? false
-Books: ID: 49, Title: Candide, Shelf Life:  3 year(s), Expired? false
+<pre>Books: ID: 7, Title: The Great Gatsby, Shelf Life:  3 year(s), Expired? false
+Books: ID: 47, Title: Candide, Shelf Life:  3 year(s), Expired? false
 Books: ID: 2, Title: Lolita, Shelf Life:  3 year(s), Expired? false
-Books: ID: 59, Title: To Kill a Mockingbird, Shelf Life:  3 year(s), Expired? false
-Books: ID: 36, Title: 1984, Shelf Life:  3 year(s), Expired? false
-Textbooks: ID: 46, Title: Myers 8th Edition Psychology, 3 years, Expired? false, price: 90.0, publication: Myers, edition: 8
-Textbooks: ID: 87, Title: Animal Farm, 4 years, Expired? false, price: 200.0
+Books: ID: 53, Title: To Kill a Mockingbird, Shelf Life:  3 year(s), Expired? false
+Books: ID: 42, Title: 1984, Shelf Life:  3 year(s), Expired? false
+Textbooks: ID: 73, Title: Myers 8th Edition Psychology, 3 years, Expired? false, price: 90.0, publication: Myers, edition: 8
+Novels: ID: 89, Title: Animal Farm, 4 years, Expired? false, price: 200.0
 Total # of books: 7
 </pre>
 </div>
