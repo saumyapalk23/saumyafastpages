@@ -125,7 +125,7 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#Unit-5">Unit 5 </a></li>
-<li class="toc-entry toc-h2"><a href="#Hack-2">Hack 2 </a></li>
+<li class="toc-entry toc-h2"><a href="#Unit-9">Unit 9 </a></li>
 <li class="toc-entry toc-h2"><a href="#Unit-9">Unit 9 </a></li>
 </ul><!--
 #################################################
@@ -231,12 +231,78 @@ Person counter: 2
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Hack-2">
-<a class="anchor" href="#Hack-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 2<a class="anchor-link" href="#Hack-2"> </a>
+<h2 id="Unit-9">
+<a class="anchor" href="#Unit-9" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 9<a class="anchor-link" href="#Unit-9"> </a>
 </h2>
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Vehicle</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">sound</span><span class="p">;</span>
+    <span class="c1">// methods and attributes</span>
+    <span class="kd">public</span> <span class="nf">Vehicle</span> <span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">){</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">sound</span> <span class="o">=</span> <span class="s">"Honk!"</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">getSound</span><span class="p">(){</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">sound</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+
+
+<span class="p">}</span>
+<span class="kd">class</span> <span class="nc">Car</span> <span class="kd">extends</span> <span class="n">Vehicle</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">sound</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Car</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">){</span>
+        <span class="kd">super</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">sound</span> <span class="o">=</span> <span class="n">sound</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Car</span> <span class="n">car1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Car</span><span class="p">(</span><span class="s">"Toyota"</span><span class="p">);</span>
+        <span class="n">car1</span><span class="p">.</span><span class="na">getSound</span><span class="p">();</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">car1</span><span class="p">.</span><span class="na">getName</span><span class="p">());</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Car</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Honk!
+Toyota
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -437,7 +503,7 @@ Dancing at the Eras tour!
 		 <span class="kt">int</span> <span class="n">tries</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
 		 <span class="kt">int</span> <span class="n">num1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 		 <span class="kt">int</span> <span class="n">num2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-	        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Fibonacci Series: "</span><span class="p">);</span> 
+	        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Fibonacci Sequence: "</span><span class="p">);</span> 
  
 	        <span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
 	        <span class="k">while</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;=</span> <span class="n">tries</span><span class="p">)</span><span class="c1">//base case</span>
