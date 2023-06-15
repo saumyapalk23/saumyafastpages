@@ -145,75 +145,72 @@ window.onload = wrap_img;
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">AndreaStudies</span><span class="p">{</span>
     <span class="kd">private</span> <span class="kt">int</span> <span class="n">year</span><span class="p">;</span>
     <span class="kd">private</span> <span class="n">String</span> <span class="n">input</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="n">String</span> <span class="o">[][]</span> <span class="n">presidents</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">presidents</span><span class="p">;</span>
+    <span class="c1">// private String [][] presidents;</span>
 
     <span class="kd">public</span> <span class="nf">AndreaStudies</span><span class="p">(){</span>
         <span class="k">this</span><span class="p">.</span><span class="na">year</span> <span class="o">=</span> <span class="mi">1788</span> <span class="o">+</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span><span class="o">*</span><span class="mi">235</span><span class="p">);</span>
-        <span class="n">Scanner</span> <span class="n">scanner</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"President: "</span><span class="p">);</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">input</span> <span class="o">=</span> <span class="n">scanner</span><span class="p">.</span><span class="na">nextLine</span><span class="p">();</span>
-        <span class="c1">// String[][] presidents = {</span>
-        <span class="c1">//     {"George Washington", "1789-1797"},</span>
-        <span class="c1">//     {"John Adams", "1797-1801"},</span>
-        <span class="c1">//     {"Thomas Jefferson", "1801-1809"},</span>
-        <span class="c1">//     {"James Madison", "1809-1817"},</span>
-        <span class="c1">//     {"James Monroe", "1817-1825"},</span>
-        <span class="c1">//     {"John Quincy Adams", "1825-1829"},</span>
-        <span class="c1">//     {"Andrew Jackson", "1829-1837"},</span>
-        <span class="c1">//     {"Martin Van Buren", "1837-1841"},</span>
-        <span class="c1">//     {"William Henry Harrison", "1841"},</span>
-        <span class="c1">//     {"John Tyler", "1841-1845"},</span>
-        <span class="c1">//     {"James K. Polk", "1845-1849"},</span>
-        <span class="c1">//     {"Zachary Taylor", "1849-1850"},</span>
-        <span class="c1">//     {"Millard Fillmore", "1850-1853"},</span>
-        <span class="c1">//     {"Franklin Pierce", "1853-1857"},</span>
-        <span class="c1">//     {"James Buchanan", "1857-1861"},</span>
-        <span class="c1">//     {"Abraham Lincoln", "1861-1865"},</span>
-        <span class="c1">//     {"Andrew Johnson", "1865-1869"},</span>
-        <span class="c1">//     {"Ulysses S. Grant", "1869-1877"},</span>
-        <span class="c1">//     {"Rutherford B. Hayes", "1877-1881"},</span>
-        <span class="c1">//     {"James A. Garfield", "1881"},</span>
-        <span class="c1">//     {"Chester A. Arthur", "1881-1885"},</span>
-        <span class="c1">//     {"Grover Cleveland", "1885-1889"},</span>
-        <span class="c1">//     {"Benjamin Harrison", "1889-1893"},</span>
-        <span class="c1">//     {"Grover Cleveland", "1893-1897"},</span>
-        <span class="c1">//     {"William McKinley", "1897-1901"},</span>
-        <span class="c1">//     {"Theodore Roosevelt", "1901-1909"},</span>
-        <span class="c1">//     {"William Howard Taft", "1909-1913"},</span>
-        <span class="c1">//     {"Woodrow Wilson", "1913-1921"},</span>
-        <span class="c1">//     {"Warren G. Harding", "1921-1923"},</span>
-        <span class="c1">//     {"Calvin Coolidge", "1923-1929"},</span>
-        <span class="c1">//     {"Herbert Hoover", "1929-1933"},</span>
-        <span class="c1">//     {"Franklin D. Roosevelt", "1933-1945"},</span>
-        <span class="c1">//     {"Harry S. Truman", "1945-1953"},</span>
-        <span class="c1">//     {"Dwight D. Eisenhower", "1953-1961"},</span>
-        <span class="c1">//     {"John F. Kennedy", "1961-1963"},</span>
-        <span class="c1">//     {"Lyndon B. Johnson", "1963-1969"},</span>
-        <span class="c1">//     {"Richard Nixon", "1969-1974"},</span>
-        <span class="c1">//     {"Gerald Ford", "1974-1977"},</span>
-        <span class="c1">//     {"Jimmy Carter", "1977-1981"},</span>
-        <span class="c1">//     {"Ronald Reagan", "1981-1989"},</span>
-        <span class="c1">//     {"George H. W. Bush", "1989-1993"},</span>
-        <span class="c1">//     {"Bill Clinton", "1993-2001"},</span>
-        <span class="c1">//     {"George W. Bush", "2001-2009"},</span>
-        <span class="c1">//     {"Barack Obama", "2009-2017"},</span>
-        <span class="c1">//     {"Donald Trump", "2017-2021"},</span>
-        <span class="c1">//     {"Joe Biden", "2021-2025"}</span>
-        <span class="c1">// };</span>
-        
+        <span class="k">this</span><span class="p">.</span><span class="na">presidents</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">();</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"George Washington"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"John Adams"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Thomas Jefferson"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"James Madison"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"James Monroe"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"John Quincy Adams"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Andrew Jackson"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Martin Van Buren"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"William Henry Harrison"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"John Tyler"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"James K. Polk"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Zachary Taylor"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Millard Fillmore"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Franklin Pierce"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"James Buchanan"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Abraham Lincoln"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Andrew Johnson"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Ulysses S. Grant"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Rutherford B. Hayes"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"James A. Garfield"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Chester A. Arthur"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Grover Cleveland"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Benjamin Harrison"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"William McKinley"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Theodore Roosevelt"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"William Howard Taft"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Woodrow Wilson"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Warren G. Harding"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Calvin Coolidge"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Herbert Hoover"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Franklin D. Roosevelt"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Harry S. Truman"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Dwight D. Eisenhower"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"John F. Kennedy"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Lyndon B. Johnson"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Richard Nixon"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Gerald Ford"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Jimmy Carter"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Ronald Reagan"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"George H. W. Bush"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Bill Clinton"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"George W. Bush"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Barack Obama"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Donald Trump"</span><span class="p">);</span>
+        <span class="n">presidents</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Joe Biden"</span><span class="p">);</span>
+
+        <span class="c1">// Scanner scanner = new Scanner(System.in);</span>
+        <span class="c1">// System.out.print("President: ");</span>
+        <span class="c1">// this.input = scanner.nextLine();</span>
     <span class="p">}</span>
     
     <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getYear</span><span class="p">(){</span>
         <span class="k">return</span> <span class="n">year</span><span class="p">;</span>
     <span class="p">}</span>
 
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">revealPres</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">year</span><span class="p">){</span>
-        <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">presidents</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-            <span class="k">for</span><span class="p">(</span><span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">presidents</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
-                
-            <span class="p">}</span>
-
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">returnPres</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="na">year</span><span class="p">){</span>
+        <span class="k">if</span> <span class="k">this</span><span class="p">.</span><span class="na">year</span> <span class="o">&lt;</span> <span class="mi">1789</span><span class="p">{</span>
+            <span class="k">return</span> <span class="n">presidents</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
         <span class="p">}</span>
+        <span class="k">if</span> <span class="k">this</span><span class="p">.</span><span class="na">year</span>
     <span class="p">}</span>
 
     <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
@@ -243,8 +240,28 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>President: Andrea, you got this! Year: 1806
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    public String returnPres(</span><span class="ansi-black-intense-fg ansi-bold">this.year){</span>
+<span class="ansi-red-intense-fg ansi-bold">illegal start of type</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    public String returnPres(this.year</span><span class="ansi-black-intense-fg ansi-bold">){</span>
+<span class="ansi-red-intense-fg ansi-bold">wrong receiver parameter name</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        if</span><span class="ansi-black-intense-fg ansi-bold"> this.year &lt; 1789{</span>
+<span class="ansi-red-intense-fg ansi-bold">'(' expected</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        if this.year &lt; 1789</span><span class="ansi-black-intense-fg ansi-bold">{</span>
+<span class="ansi-red-intense-fg ansi-bold">')' expected</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        if</span><span class="ansi-black-intense-fg ansi-bold"> this.year</span>
+<span class="ansi-red-intense-fg ansi-bold">'(' expected</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        if this.year</span>
+<span class="ansi-red-intense-fg ansi-bold">')' expected</span>
+
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    </span><span class="ansi-black-intense-fg ansi-bold">}</span>
+<span class="ansi-red-intense-fg ansi-bold">illegal start of statement</span>
 </pre>
 </div>
 </div>
